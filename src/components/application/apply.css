@@ -1,0 +1,415 @@
+.form-main-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, 
+    rgba(255, 255, 255, 0.453974) 53.97%, 
+    rgba(255, 255, 255, 0.5) 100%);
+}
+
+.form-container{
+    width: 80%;
+    margin: 5rem auto 5rem auto;
+}
+
+.form-container > h1{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    color: rgba(18, 18, 18, 1);
+}
+
+.form-container > p{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(18, 18, 18, 1);
+    margin: 0;
+}
+
+.stages {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px 0;
+}
+
+.registration-step{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+    margin: 0;
+}
+
+.bar {
+    height: 5px;
+    width: 200px;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: rgba(240, 240, 240, 1);
+
+}
+  
+.stage.active .bar {
+    background-color: rgba(255, 224, 131, 1);
+}
+  
+.stage.completed .bar {
+    background-color: rgba(0, 103, 184, 1);
+}
+
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 3rem auto 3rem auto;
+}
+  
+
+/* .registration-input{
+    width: 100%;
+} */
+
+.registration-input{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    color: rgba(18, 18, 18, 1);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.unvalidated-registration-input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgba(18, 18, 18, 1);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    border: 1px solid red;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    color: #999;
+}
+
+.form-warning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 244, 206, 1);
+    border-radius: 10px;
+    width: fit-content;
+    margin: 5rem auto;
+    padding: 0.2rem 2rem;
+}
+
+.form-warning > p{
+    margin-left: 0.7rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+
+.registration-multiple-input{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 1rem;
+    padding-right: 50px; /* Add padding to the right */
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    color: rgba(18, 18, 18, 1);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;  
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    background: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 35px) calc(1em + 2px), calc(100% - 30px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+}
+  
+.registration-multiple-input option:disabled {
+    color: #999;
+    opacity: 0.5;
+}
+
+  
+.registration-multiple-input option{
+    padding: 1rem 0;
+}
+
+
+.registration-btns{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.register-btn {
+    padding: 10px;
+    background-color: rgba(0, 103, 184, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.register-finish-btn {
+    padding: 0.8rem 3rem;
+    background-color: rgba(0, 103, 184, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+  
+.register-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.overlay h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.overlay  p{
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.register-table {
+    width: 100%;
+    height: 100px;
+    border-collapse: collapse;
+}
+
+
+.register-table th {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: left;    
+    color: rgba(18, 18, 18, 1);    
+    /* width: 28%; */
+}
+
+.register-table td {
+    padding: 8px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(18, 18, 18, 1);    
+}
+
+.register-price-details{
+    width: 96%;
+    margin: 7rem 0 4rem 0;
+}
+
+.register-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px){
+   .form-main-container{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+   }
+
+   .form-container{
+        width: 92%;
+        margin: 2rem auto;
+   }
+
+   .form-container > h1{
+        font-size: 32px;
+        font-weight: 500;
+        text-align: left;
+   }
+
+
+   .form-container > p{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .registration-step{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .bar{
+        width: 100px;
+    }
+
+    .registration-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem auto 1rem auto;
+    }
+
+    .registration-input{
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .unvalidated-registration-input {
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .registration-multiple-input {
+        width: 100%; /* Full width on mobile */
+        padding: 1rem 1rem; /* Adjust padding for better spacing */
+        padding-right: 40px; /* Adjust right padding to fit better on mobile */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        margin-bottom: 2rem; /* Reduce bottom margin */
+        background-position: calc(100% - 25px) center, /* Center vertically */
+                            calc(100% - 20px) center, /* Center vertically */
+                            100% 0;
+    }
+
+    .registration-multiple-input > option{        
+        width: 80%;
+    }
+
+    .registration-btns{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .register-btn {
+        width: auto;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .register-table th{
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .register-table td{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .registration-multiple-input > option{
+        font-size: 0.7rem;
+    }
+
+    .multiple-reg-value{
+        font-size: 0.7rem;
+    }
+
+    .form-warning{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(255, 244, 206, 1);
+        border-radius: 10px;
+        width: fit-content;
+        margin: 3rem auto;
+        padding: 0.2rem 1rem;
+    }
+
+    .form-warning > p{
+        font-size: 0.9rem;
+    }
+
+    .overlay img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .overlay h1{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .overlay p{
+        font-size: 1rem;
+    }
+
+
+}
