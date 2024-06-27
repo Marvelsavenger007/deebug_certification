@@ -139,7 +139,7 @@ const Landingpage = () => {
                     }
                 })}
             </div>
-            <button className='register-finish-btn' onClick={() => navigate("/CourseApplication")}>Application</button>
+            <button className='register-finish-btn' onClick={() => navigate("/CertificationRenewal")}>Application</button>
         </div>
     </div>
   )

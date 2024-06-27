@@ -7,8 +7,8 @@
     align-items: center;
     width: auto;
     padding: 5%;
-    overflow: hidden;
-    background-color:  linear-gradient(93.22deg, #F3F3F3 2.25%, #FFFFFF 44.34%, #F3F3F3 65.52%);
+    overflow: hidden;    
+    background: linear-gradient(93.22deg, #F3F3F3 2.25%, #FFFFFF 44.34%, #F3F3F3 65.52%);
     /* background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
