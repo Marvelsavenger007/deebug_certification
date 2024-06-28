@@ -34,7 +34,8 @@ const Landingpage = () => {
         {
             title: 'Deebug Institute Certified: Backend (NodeJS & Express) Software Developer',
             category: 'software-development',
-            icons: [node, spring, git, django]
+            icons: [node, spring, git, django],
+            link: "/Certification/Backend(NodeJS&Express)SoftwareDevelopement"
         },
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
@@ -115,7 +116,7 @@ const Landingpage = () => {
                         return (
                             <div className='individual-courses' key={index}>
                                 <h2>Certification</h2>
-                                <h1>{course.title}</h1>
+                                <h1><a href={course.link}>{course.title}</a></h1>
                                 <div className='imagelevel'>
                                     <p>Level <span>Beginner</span></p>
                                     <div className='courses-images'>
