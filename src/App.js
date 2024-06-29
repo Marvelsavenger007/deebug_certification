@@ -1,5 +1,7 @@
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/navbar/Navbar';
 import Home from './home/Home';
 import Landingpage from './landingpage/Landingpage';
 import Application from './components/application/Application';
@@ -14,13 +16,17 @@ import MobileDev from './courses/MobileDev';
 import FlutterDev from './courses/FlutterDev';
 import AndroidDev from './courses/AndroidDev';
 import IOSDeveloper from './courses/IOSDeveloper';
+import SignIn from './components/login/SignIn';
 
 function App() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
   return (
     <BrowserRouter>
+      <Navbar isSignedIn={isSignedIn} setIsSignedIn={setIsSignedIn} />
       <Routes>
       <Route exact path="/" element={<Home />}>
         <Route path="" element={<Landingpage />} />
+        <Route path="/SignIn" element={<SignIn setIsSignedIn={setIsSignedIn} />} />
         <Route path="/CourseApplication" element={<Application />} />
         <Route path='/ExamApplication' element={<ExamApplication />} />
         <Route path="/CertificationRenewal" element={<CertificationRenewal />} />

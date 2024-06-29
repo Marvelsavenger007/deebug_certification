@@ -1,15 +1,16 @@
-// src/components/Navbar.js
 import React, { useState } from 'react';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import logo from "../images/logo.png";
 import "./navbar.css";
 import Search from '../search/Search';
 import Modal from "react-modal";
-import check from '../images/checkcircle.png';
 import frame from '../images/profile.png';
-Modal.setAppElement('#root'); // Add this to avoid screen reader issues
+Modal.setAppElement('#root');
 
-const Navbar = () => {
+const Navbar = ({ isSignedIn, setIsSignedIn }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -18,7 +19,15 @@ const Navbar = () => {
     const closeModal = () => {
         setModalIsOpen(false);
     };
-    
+
+    const handleLogout = () => {
+        setIsSignedIn(false);
+        closeModal();
+        navigate('/');
+    };
+
+    const hideElements = location.pathname === '/SignIn';
+
     return (
         <div className='navbar-container'>
             <div className='navbar-title'>
@@ -29,44 +38,50 @@ const Navbar = () => {
                     alt='icon'
                 />
                 <h1>DEEBUG</h1>
-            </div>  
-            <div className='search-container'>
-                <Search />
             </div>
-        <div className='profile-container'>
-            <img    
-                src={check}
-                width="100px"
-                height="100px"
-                alt='icon'
-                onClick={openModal} // Add this line
-            />
-
-            signin
-            <Modal 
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Registration Successful"
-                className="navbar-modal"
-                overlayClassName="navbar-overlay"
-            >
-                <img
-                    src={frame}
-                    width="100px"
-                    height="100px"
-                    alt='profile'
-                />
-                <h1>saint</h1>
-                <h2>thunderstorm@gmail.com</h2>
-                <div className='profile-content'>
-                    <p>profile</p>
-                    <p>my videos</p>
-                    <p>my friends</p>
-                    <hr />
-                    <p>Logout</p>
-                </div>
-            </Modal>
-        </div>
+            {!hideElements && (
+                <>
+                    <div className='search-container'>
+                        <Search />
+                    </div>
+                    <div className='profile-container'>
+                        {isSignedIn ? (
+                            <img
+                                src={frame}
+                                width="40px"
+                                height="40px"
+                                alt='icon'
+                                onClick={openModal}
+                            />
+                        ) : (
+                            <Link to='/SignIn'>sign in</Link>
+                        )}
+                        <Modal
+                            isOpen={modalIsOpen}
+                            onRequestClose={closeModal}
+                            contentLabel="Registration Successful"
+                            className="navbar-modal"
+                            overlayClassName="navbar-overlay"
+                        >
+                            <img
+                                src={frame}
+                                width="100px"
+                                height="100px"
+                                alt='profile'
+                            />
+                            <h1>Purpose Olikiabo</h1>
+                            <h2>purposeolikiabo@gmail.com</h2>
+                            <div className='profile-content'>
+                                <p><a href='/'>Profile</a></p>
+                                <p><a href='/'>My certifications</a></p>
+                                <p><a href='/'>Saved courses</a></p>
+                                <hr />
+                                <p onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</p>
+                            </div>
+                        </Modal>
+                    </div>
+                </>
+            )}
         </div>
     );
 };

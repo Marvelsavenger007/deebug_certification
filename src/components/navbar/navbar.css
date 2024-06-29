@@ -31,8 +31,8 @@
     bottom: auto;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 2rem 1rem;
-    width: 20vw;
+    padding: 3rem 2rem;
+    width: 25vw;
     border-radius: 10px;
     outline: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -80,6 +80,16 @@
     color: rgba(18, 18, 18, 1);    
 }
 
+.profile-content > p > a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    text-align: left;
+    color: rgba(18, 18, 18, 1);   
+    cursor: pointer; 
+}
+
 .profile-content{
     width: 100%;
     /* background-color: orange; */
@@ -88,4 +98,12 @@
 
 .profile-content > hr{
     border: 0.4px solid rgba(153, 153, 153, 1)
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-modal{
+        width: 70vw;
+        padding: 1rem 1.5rem;
+    }
 }
