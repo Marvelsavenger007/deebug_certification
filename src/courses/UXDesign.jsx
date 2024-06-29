@@ -1,40 +1,39 @@
 import React, {useState} from 'react';
-import "../courses.css"
-import down from "../../components/images/arrowdown.png";
-import badge from "../../components/images/DeebugBadge.png";
-import backend from "../../components/images/backenddevfull.webp";
-import history from "../../components/images/history.png";
-import check from "../../components/images/check.png";
-import certificate from "../../components/images/certificate.webp";
-import react from "../../components/images/react.png";
-import git from "../../components/images/github.png";
-import adobe from "../../components/images/adobe.png";
-import adobexd from "../../components/images/adobe-xd.png";
-import sketch from "../../components/images/sketch.png";
-import vue from "../../components/images/vuejs.png";
-import angular from "../../components/images/angularjs.png";
-import figma from "../../components/images/figma.png";
+import "./courses.css"
+import down from "../components/images/arrowdown.png";
+import badge from "../components/images/DeebugBadge.png";
+import backend from "../components/images/UXdesign.webp";
+import history from "../components/images/history.png";
+import check from "../components/images/check.png";
+import certificate from "../components/images/certificate.webp";
+import react from "../components/images/react.png";
+import git from "../components/images/github.png";
+import adobe from "../components/images/adobe.png";
+import adobexd from "../components/images/adobe-xd.png";
+import sketch from "../components/images/sketch.png";
+import figma from "../components/images/figma.png";
+import vue from "../components/images/vuejs.png";
+import angular from "../components/images/angularjs.png";
 
 
-const BackendDevelopment = () => {
+const UXDesign = () => {
     const courses1 = [
-      { course: "Fundamentals of Software Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] },
-      { course: "Backend Development Fundamentals", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Database Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Backend Testing and Security", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Backend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to UX Design", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
+      { course: "User Research", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
+      { course: "User Experience Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Usability and Accessibility", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Interaction Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Visual Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Design Tools and Software", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Designing for Digital Health", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Designing for Business", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "UX Design Best Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Portfolio Development and Career Growth", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Capstone Project", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
     ];
 
     
     const courses = [
-        {
-            title: 'Deebug Institute Certified: UX Design',
-            category: 'design',
-            icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
-        },
         {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
@@ -51,15 +50,19 @@ const BackendDevelopment = () => {
 
 
  
-  
     const [openCourse, setOpenCourse] = useState(null);
-    const [showAll] = useState(false);
+    const [showAll, setShowAll] = useState(false);
   
     const toggleCourse = (course) => {
       setOpenCourse(openCourse === course ? null : course);
     };
   
+    const toggleShowAll = () => {
+      setShowAll(!showAll);
+    };
+  
     const displayedCourses = showAll ? courses1 : courses1.slice(0, 10);
+  
   
 
   return (
@@ -73,14 +76,14 @@ const BackendDevelopment = () => {
                     alt='icon'
                 />
                 <p>Certification</p>
-                <h1>Deebug Institute Certified: Backend (NodeJS & Express) Software Developement</h1>
-                <h2>Become a proficient Backend Software Developer with our comprehensive professional course.</h2>
+                <h1>Deebug Institute Certified: UX Design</h1>
+                <h2>Become a proficient UX Designer with our comprehensive professional course.</h2>
                 <button>Apply now</button>
             </div>
             <div className='course-bground-img'>
                 <img
                     src={backend}
-                    width="70%"
+                    width="100%"
                     height='100%'
                     alt='icon'
                 />
@@ -101,7 +104,7 @@ const BackendDevelopment = () => {
                             <h1>Level</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <p> Beginner</p>
+                            <p>Beginner</p>
                         </div>
                     </div>
                     <div className='course-duration-props'>
@@ -129,7 +132,7 @@ const BackendDevelopment = () => {
                             <h1>Price</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <p>₦300,000</p>
+                            <p> ₦250,000</p>
                         </div>
                     </div>
                 </div>
@@ -159,8 +162,7 @@ const BackendDevelopment = () => {
                             <h1>Prerequisites</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <li>Basic knowledge of programming concepts.</li>
-                            <li>Familiarity with at least one programming language is an advantage.</li>
+                            <li>A passion for design and a commitment to mastering user experience principles.</li>
                         </div>
                     </div>
                 </div>
@@ -169,21 +171,24 @@ const BackendDevelopment = () => {
         <div className='course-overview'>
             <h1>Course overview</h1>
             <p>
-                This comprehensive course covers a wide range of topics essential 
-                for backend development and DevOps practices. Participants will 
-                delve into data structures and algorithms, software development 
-                methodologies, backend frameworks, containerization, cloud management, 
-                and more.
+                Advance your career with our comprehensive Professional UX Design Certification, 
+                designed to equip you with the expertise needed to excel in the dynamic field of 
+                user experience design. This course delves into all critical aspects of UX design, 
+                from foundational principles of user research, information architecture, and interaction design, 
+                to advanced practices in usability testing, prototyping, and user interface design. 
             </p>
             <p>
-                Through hands-on projects and real-world examples, learners will 
-                gain practical experience and develop the skills needed to build 
-                robust, scalable, and secure backend systems.
+                You will learn to create intuitive and engaging user experiences using industry-standard
+                tools like Sketch, Figma, and Adobe XD, while mastering methodologies such as Design 
+                Thinking and Lean UX. With hands-on projects, real-world case studies, and expert 
+                mentorship, you will develop the skills and confidence to succeed as a UX Designer 
+                in today’s competitive market.  By successfully completing this rigorous program, you will be well-equipped to:
+
             </p>
         </div>
         <div className="course-content">
             <h1>Course content</h1>
-            <p>7 Modules</p>
+            <p>12 Modules</p>
             {displayedCourses.map((course) => (
                 <div key={course.course} className="course-week">
                     <div className="course-header" onClick={() => toggleCourse(course.course)}>
@@ -203,6 +208,15 @@ const BackendDevelopment = () => {
                     )}
                 </div>
             ))}
+            <button onClick={toggleShowAll}>
+                {showAll ? 'Show Less' : 'View More'}
+                <img
+                    src={down}
+                    width="11px"
+                    height="11px"
+                    alt='icon'
+                />
+            </button>
             <h2>View course curriculum</h2>
         </div>
         <div className='course-skill'>
@@ -215,7 +229,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Create a basic API endpoint using a backend framework</p>
+                <p>Understand core UX design principles and user-centered design methodologies.</p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -224,7 +238,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Write queries to retrieve and manipulate data using SQL or a document database like MongoDB.</p>
+                <p>WorkConduct effective user research and usability testing.</p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -233,7 +247,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Creating repositories, committing changes, branching, and merging code using Git.</p>
+                <p>Develop wireframes, prototypes, and high-fidelity designs using leading design tools.</p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -242,7 +256,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>API Testing</p>
+                <p>Create responsive and accessible interfaces that enhance user satisfaction.</p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -251,19 +265,46 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Implement Basic Security</p>
+                <p>Implement best practices for information architecture and interaction design.</p>
+            </div>
+            <div className='course-skill-content'>
+                <img
+                    src={check}
+                    width="22px"
+                    height="15px"
+                    alt='check'
+                />
+                <p>Collaborate efficiently within cross-functional teams.</p>
+            </div>
+            <div className='course-skill-content'>
+                <img
+                    src={check}
+                    width="22px"
+                    height="15px"
+                    alt='check'
+                />
+                <p>Confidently apply for UX Design positions and advance your career in the tech industry.</p>
+            </div>
+            <div className='course-skill-content'>
+                <img
+                    src={check}
+                    width="22px"
+                    height="15px"
+                    alt='check'
+                />
+                <p>Build a design portfolio</p>
             </div>
         </div>
         <div className='course-exam'>
             <h1>Certification exam</h1>
             <div className='course-exam-ctn'>
                 <div className='course-exam-text'>
-                    <h1>Exam: Backend (NodeJS & Express) Software Developement</h1>
+                    <h1>Exam: UX Design</h1>
                     <p>
-                        This exam tests your expertise in building robust backend 
-                        applications using Node.js and Express. Master data handling, 
-                        API creation, and best practices for clean, maintainable code 
-                        and earns you an industry-verified certificate from Deebug.
+                        This exam tests your ability to design intuitive and engaging user 
+                        experiences. Use of different user research methods, information 
+                        architecture, and design principles and earns you an industry-verified 
+                        certificate from Deebug.
                     </p>
                     <h2>Application ends in 03: 12: 50</h2>
                     <button>Apply for exam</button>
@@ -319,4 +360,4 @@ const BackendDevelopment = () => {
   )
 }
 
-export default BackendDevelopment
+export default UXDesign

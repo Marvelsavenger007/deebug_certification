@@ -29,7 +29,8 @@ const Landingpage = () => {
         {
             title: 'Deebug Institute Certified: Full Stack (MERN) Software Development',
             category: 'software-development',
-            icons: [express, react, node, git, mongo]
+            icons: [express, react, node, git, mongo],
+            link: "/Certification/FullStack(MERN)SoftwareDevelopment"
         },
         {
             title: 'Deebug Institute Certified: Backend (NodeJS & Express) Software Developer',
@@ -40,37 +41,44 @@ const Landingpage = () => {
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
             category: 'software-development',
-            icons: [react, vue, git, angular]
+            icons: [react, vue, git, angular],
+            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
         },
         {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
-            icons: [adobe, adobexd, sketch, figma]
+            icons: [adobe, adobexd, sketch, figma],
+            link: "/Certification/UXDesign"
         },
         {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
-            icons: [adobe, adobexd, sketch, figma]
+            icons: [adobe, adobexd, sketch, figma],
+            link: "/Certification/UIDesign"
         },
         {
             title: 'Deebug Institute Certified: Complete Mobile Application Developer',
             category: 'app-development',
-            icons: [react, swift, xcode, kotlin]
+            icons: [react, swift, xcode, kotlin],
+            link: "/Certification/MobileApplicationDevelopment"
         },
         {
             title: 'Deebug Institute Certified: Flutter Application Developer',
             category: 'app-development',
-            icons: [flutter, dart, git]
+            icons: [flutter, dart, git],
+            link: "/Certification/FlutterApplicationDevelopment"
         },
         {
             title: 'Deebug Institute Certified: Android Developer',
             category: 'app-development',
-            icons: [kotlin]
+            icons: [kotlin],
+            link: "/Certification/AndroidDevelopment"
         },
         {
             title: 'Deebug Institute Certified: iOS Developer',
             category: 'app-development',
-            icons: [xcode]
+            icons: [xcode],
+            link: "/Certification/iOSDevelopment"
         },
     ];
 

@@ -1,51 +1,51 @@
 import React, {useState} from 'react';
-import "../courses.css"
-import down from "../../components/images/arrowdown.png";
-import badge from "../../components/images/DeebugBadge.png";
-import backend from "../../components/images/backenddevfull.webp";
-import history from "../../components/images/history.png";
-import check from "../../components/images/check.png";
-import certificate from "../../components/images/certificate.webp";
-import react from "../../components/images/react.png";
-import git from "../../components/images/github.png";
-import adobe from "../../components/images/adobe.png";
-import adobexd from "../../components/images/adobe-xd.png";
-import sketch from "../../components/images/sketch.png";
-import vue from "../../components/images/vuejs.png";
-import angular from "../../components/images/angularjs.png";
-import figma from "../../components/images/figma.png";
+import "./courses.css"
+import down from "../components/images/arrowdown.png";
+import badge from "../components/images/DeebugBadge.png";
+import backend from "../components/images/kotlin.webp";
+import history from "../components/images/history.png";
+import check from "../components/images/check.png";
+import certificate from "../components/images/certificate.webp";
+import git from "../components/images/github.png";
+import xcode from "../components/images/xcode.png";
+import flutter from "../components/images/flutter.png";
+import dart from "../components/images/dart.png";
 
 
-const BackendDevelopment = () => {
+const AndroidDev = () => {
     const courses1 = [
-      { course: "Fundamentals of Software Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] },
-      { course: "Backend Development Fundamentals", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Database Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Backend Testing and Security", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Backend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to Android Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
+      { course: "Android Components", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
+      { course: "User Interface Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Fragments", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Support User Interface Components", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Data Storage", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Multithreading and Asynchronous Programming", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Debugging and Error Handling", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Context and 3rd Party Libraries", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Networking", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Data Format and HTTP", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Android Jetpack", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "UI Components and Enhancements", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Compose", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Design Patterns and Architecture", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Unit Testing and Firebase Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Security and App Release", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
     ];
 
     
     const courses = [
         {
-            title: 'Deebug Institute Certified: UX Design',
-            category: 'design',
-            icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            title: 'Deebug Institute Certified: Flutter Application Developer',
+            category: 'app-development',
+            icons: [flutter, dart, git],
+            link: "/Certification/FlutterApplicationDevelopment"
         },
         {
-            title: 'Deebug Institute Certified: UI Design',
-            category: 'design',
-            icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
-        },
-        {
-            title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
-            category: 'software-development',
-            icons: [react, vue, git, angular],
-            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
+            title: 'Deebug Institute Certified: iOS Developer',
+            category: 'app-development',
+            icons: [xcode],
+            link: "/Certification/iOSDevelopment"
         },
     ];
 
@@ -53,10 +53,14 @@ const BackendDevelopment = () => {
  
   
     const [openCourse, setOpenCourse] = useState(null);
-    const [showAll] = useState(false);
+    const [showAll, setShowAll] = useState(false);
   
     const toggleCourse = (course) => {
       setOpenCourse(openCourse === course ? null : course);
+    };
+  
+    const toggleShowAll = () => {
+      setShowAll(!showAll);
     };
   
     const displayedCourses = showAll ? courses1 : courses1.slice(0, 10);
@@ -73,14 +77,14 @@ const BackendDevelopment = () => {
                     alt='icon'
                 />
                 <p>Certification</p>
-                <h1>Deebug Institute Certified: Backend (NodeJS & Express) Software Developement</h1>
-                <h2>Become a proficient Backend Software Developer with our comprehensive professional course.</h2>
+                <h1>Deebug Institute Certified: Android Developer</h1>
+                <h2>Become a proficient Android Developer with our  complete comprehensive professional course.</h2>
                 <button>Apply now</button>
             </div>
             <div className='course-bground-img'>
                 <img
                     src={backend}
-                    width="70%"
+                    width="100%"
                     height='100%'
                     alt='icon'
                 />
@@ -101,7 +105,7 @@ const BackendDevelopment = () => {
                             <h1>Level</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <p> Beginner</p>
+                            <p>Beginner</p>
                         </div>
                     </div>
                     <div className='course-duration-props'>
@@ -129,7 +133,7 @@ const BackendDevelopment = () => {
                             <h1>Price</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <p>₦300,000</p>
+                            <p> ₦250,000</p>
                         </div>
                     </div>
                 </div>
@@ -159,8 +163,8 @@ const BackendDevelopment = () => {
                             <h1>Prerequisites</h1>
                         </div>
                         <div className='course-duration-props-child'>
-                            <li>Basic knowledge of programming concepts.</li>
-                            <li>Familiarity with at least one programming language is an advantage.</li>
+                        <li>Solid understanding of programming fundamentals.</li>
+                        <li>Curiosity for learning new technologies.</li>
                         </div>
                     </div>
                 </div>
@@ -169,21 +173,24 @@ const BackendDevelopment = () => {
         <div className='course-overview'>
             <h1>Course overview</h1>
             <p>
-                This comprehensive course covers a wide range of topics essential 
-                for backend development and DevOps practices. Participants will 
-                delve into data structures and algorithms, software development 
-                methodologies, backend frameworks, containerization, cloud management, 
-                and more.
+                The Kotlin Android Developer Professional Certificate is a comprehensive 
+                program meticulously crafted to equip learners with the essential skills 
+                and knowledge required to excel in Android app development using Kotlin. 
+                Through a structured curriculum and hands-on learning approach, this course 
+                empowers participants to build high-quality, feature-rich Android applications 
+                that meet industry standards and user expectations.                
             </p>
             <p>
-                Through hands-on projects and real-world examples, learners will 
-                gain practical experience and develop the skills needed to build 
-                robust, scalable, and secure backend systems.
+                This program is designed to cater to both beginners and experienced developers, 
+                offering a seamless transition to Kotlin from other programming languages like 
+                Java. By focusing on modern practices and industry-standard tools, learners will 
+                delve into fundamental and advanced concepts in Android app development, ensuring 
+                a solid foundation for their career in mobile application development.
             </p>
         </div>
         <div className="course-content">
             <h1>Course content</h1>
-            <p>7 Modules</p>
+            <p>17 Modules</p>
             {displayedCourses.map((course) => (
                 <div key={course.course} className="course-week">
                     <div className="course-header" onClick={() => toggleCourse(course.course)}>
@@ -203,6 +210,15 @@ const BackendDevelopment = () => {
                     )}
                 </div>
             ))}
+            <button onClick={toggleShowAll}>
+                {showAll ? 'Show Less' : 'View More'}
+                <img
+                    src={down}
+                    width="11px"
+                    height="11px"
+                    alt='icon'
+                />
+            </button>
             <h2>View course curriculum</h2>
         </div>
         <div className='course-skill'>
@@ -215,7 +231,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Create a basic API endpoint using a backend framework</p>
+                <p>Create a simple app with UI elements (using Widgets), user interaction (Buttons, Text Fields), and state management </p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -224,7 +240,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Write queries to retrieve and manipulate data using SQL or a document database like MongoDB.</p>
+                <p>Make an HTTP request using Flutter to retrieve data from an API and display it within your app</p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -233,7 +249,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Creating repositories, committing changes, branching, and merging code using Git.</p>
+                <p>Set up Firebase and implement a feature like user authentication or real-time data synchronization </p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -242,7 +258,7 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>API Testing</p>
+                <p>Create a unit test to ensure a specific Flutter widget behaves as expected </p>
             </div>
             <div className='course-skill-content'>
                 <img
@@ -251,19 +267,19 @@ const BackendDevelopment = () => {
                     height="15px"
                     alt='check'
                 />
-                <p>Implement Basic Security</p>
+                <p>Prepare and deploy a Flutter app to an app store (Android or iOS) using tools like Git and CI/CD</p>
             </div>
         </div>
         <div className='course-exam'>
             <h1>Certification exam</h1>
             <div className='course-exam-ctn'>
                 <div className='course-exam-text'>
-                    <h1>Exam: Backend (NodeJS & Express) Software Developement</h1>
+                    <h1>Exam: Android Developer</h1>
                     <p>
-                        This exam tests your expertise in building robust backend 
-                        applications using Node.js and Express. Master data handling, 
-                        API creation, and best practices for clean, maintainable code 
-                        and earns you an industry-verified certificate from Deebug.
+                        This exam assesses your skills in developing native Android 
+                        applications using Java or Kotlin. Master Android architecture,
+                        user interface design, and the Android Studio development 
+                        environment and earns you an industry-verified certificate from Deebug.
                     </p>
                     <h2>Application ends in 03: 12: 50</h2>
                     <button>Apply for exam</button>
@@ -319,4 +335,4 @@ const BackendDevelopment = () => {
   )
 }
 
-export default BackendDevelopment
+export default AndroidDev
