@@ -3,9 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.1rem 4%;
+    padding: 0 4%;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(153, 153, 153, 0.6);
+    height: 6vh;
 }
 
 .navbar-title{
@@ -16,13 +17,22 @@
 
 .navbar-title > h1{
     margin-left: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1);
 }
 
- 
+.nav-signin{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 103, 184, 1);    
+    cursor: pointer;
+}
+
+/* 
 .navbar-modal {
     position: absolute;
     top: 50%;
@@ -33,6 +43,7 @@
     background-color: white;
     padding: 3rem 2rem;
     width: 25vw;
+    height: fit-content;
     border-radius: 10px;
     outline: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -46,19 +57,46 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 20%;
     bottom: 0;
     background-color: rgba(0,0,0,0.75);
+} */
+
+.navbar-modal {
+    position: absolute;
+    top: 6%; /* Adjust this value if you need more or less gap from the top */
+    right: 2%; /* This ensures the modal is 6% away from the right side */
+    transform: none; /* Remove the centering transform */
+    background-color: white;
+    padding: 3rem 2rem;
+    width: 25vw;
+    height: fit-content;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 4px 34px 0px rgba(153, 153, 153, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Cover the entire width of the screen */
+    bottom: 0;
+}
+
 
 .navbar-overlay h1{
     margin: 0;
     margin-top: 5px;
     padding: 0;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 41.6px;
-    text-align: left;
+    text-align: center;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -68,13 +106,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 23.4px;
-    text-align: left;
+    text-align: center;
     color: rgba(102, 102, 102, 1);
 }
 
 .profile-content > p{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 23.4px;
     text-align: left;
     color: rgba(18, 18, 18, 1);    
@@ -83,7 +121,7 @@
 .profile-content > p > a{
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 23.4px;
     text-align: left;
     color: rgba(18, 18, 18, 1);   
@@ -100,10 +138,51 @@
     border: 0.4px solid rgba(153, 153, 153, 1)
 }
 
+.profile-container > img{
+    border-radius: 50%;
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar-modal{
         width: 70vw;
         padding: 1rem 1.5rem;
     }
+
+    .navbar-title > h1{
+        display: none;
+    }
+
+    .navbar-title > img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-modal{
+        right: 5%;
+    }
+
+    .navbar-overlay h1{
+        font-size: 1.5rem;
+    }
+
+    .navbar-overlay h2{
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .navbar-overlay img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-content > p{
+        font-size: 1rem;
+    }
+
+    .profile-content > p > a{
+        font-size: 1rem;
+    }
+
+
 }

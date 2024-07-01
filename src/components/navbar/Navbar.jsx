@@ -33,8 +33,8 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
             <div className='navbar-title'>
                 <img
                     src={logo}
-                    width="28px"
-                    height="28px"
+                    width="23px"
+                    height="23px"
                     alt='icon'
                 />
                 <h1>DEEBUG</h1>
@@ -48,13 +48,13 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
                         {isSignedIn ? (
                             <img
                                 src={frame}
-                                width="40px"
-                                height="40px"
+                                width="30px"
+                                height="30px"
                                 alt='icon'
                                 onClick={openModal}
                             />
                         ) : (
-                            <Link to='/SignIn'>sign in</Link>
+                            <Link to='/SignIn' className='nav-signin'>Sign in</Link>
                         )}
                         <Modal
                             isOpen={modalIsOpen}
@@ -72,11 +72,11 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
                             <h1>Purpose Olikiabo</h1>
                             <h2>purposeolikiabo@gmail.com</h2>
                             <div className='profile-content'>
-                                <p><a href='/'>Profile</a></p>
-                                <p><a href='/'>My certifications</a></p>
+                                <p><a href='/Profile'>Profile</a></p>
+                                <p><a href='/MyCertificates'>My certifications</a></p>
                                 <p><a href='/'>Saved courses</a></p>
                                 <hr />
-                                <p onClick={handleLogout} style={{ cursor: 'pointer' }}>Logout</p>
+                                <p onClick={handleLogout} style={{ cursor: 'pointer' }}>Sign out</p>
                             </div>
                         </Modal>
                     </div>

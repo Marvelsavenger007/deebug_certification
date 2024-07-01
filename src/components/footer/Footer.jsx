@@ -20,38 +20,46 @@ const Footer = () => {
                 <h1>Nigeria</h1>
             </div>
             <div className='footer-bottom'>
-                <div className='footer1'>
+                {/* <div className='footer1'> */}
                     <p>Privacy Policy</p>
                     <p>Terms of Use</p>
-                </div>
-                <div className='footer1'>
+                {/* </div> */}
+                {/* <div className='footer1'> */}
                     <p>© Deebug 2024</p>
-                </div>
+                {/* </div> */}
                 <div className='footer-images'>
-                    <img
-                        src={facebook}
-                        width="24px"
-                        height="24px"
-                        alt='icon'
-                    />
-                    <img
-                        src={instagram}
-                        width="24px"
-                        height="24px"
-                        alt='icon'
-                    />
+                    <a href='https://www.facebook.com/Deebugstudios?mibextid=LQQJ4d'>
+                        <img
+                            src={facebook}
+                            width="24px"
+                            height="24px"
+                            alt='icon'
+                        />
+                    </a>
+                    <a href='https://www.instagram.com/deebuginstitute?igsh=MWFudDRmbWsxcjdidQ%3D%3D&utm_source=qr'>
+                        <img
+                            src={instagram}
+                            width="24px"
+                            height="24px"
+                            alt='icon'
+                        />
+                    </a>
+                    <a href='https://www.linkedin.com/company/deebug'>
                     <img
                         src={linkedin}
                         width="24px"
                         height="24px"
                         alt='icon'
                     />
-                    <img
-                        src={twitter}
-                        width="24px"
-                        height="24px"
-                        alt='icon'
-                    />
+                    </a>
+                    <a href='https://x.com/deebuginstitut?s=21&t=vF5bhlc1QM0pl3BXIfYIzw'>
+                        <img
+                            src={twitter}
+                            width="24px"
+                            height="24px"
+                            alt='icon'
+                        />
+                    </a>
                 </div>
             </div>
         </div>

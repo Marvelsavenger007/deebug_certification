@@ -14,6 +14,7 @@ import node from "../components/images/nodejs.png";
 import git from "../components/images/github.png";
 import spring from "../components/images/spring.png";
 import django from "../components/images/django.png";
+import btn from "../components/images/btn.png"
 
 
 
@@ -306,7 +307,16 @@ const MobileDev = () => {
                         <h2>Certification</h2>
                         <h1><a href={course.link}>{course.title}</a></h1>
                         <div className='imagelevel'>
-                            <p>Level <span>Beginner</span></p>
+                            <p> 
+                                Level 
+                                <img
+                                    src={btn}
+                                    width="5px"
+                                    height="5px"
+                                    alt='icon'
+                                />
+                                <span>Beginner</span>
+                                </p>
                             <div className='courses-images'>
                                 {course.icons.map((icon, i) => (
                                     <img

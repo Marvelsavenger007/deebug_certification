@@ -10,6 +10,7 @@ import adobe from "../components/images/adobe.png";
 import adobexd from "../components/images/adobe-xd.png";
 import sketch from "../components/images/sketch.png";
 import figma from "../components/images/figma.png";
+import btn from "../components/images/btn.png"
 
 
 const Frontend = () => {
@@ -316,7 +317,16 @@ const Frontend = () => {
                         <h2>Certification</h2>
                         <h1><a href={course.link}>{course.title}</a></h1>
                         <div className='imagelevel'>
-                            <p>Level <span>Beginner</span></p>
+                            <p> 
+                                Level 
+                                <img
+                                    src={btn}
+                                    width="5px"
+                                    height="5px"
+                                    alt='icon'
+                                />
+                                <span>Beginner</span>
+                                </p>
                             <div className='courses-images'>
                                 {course.icons.map((icon, i) => (
                                     <img

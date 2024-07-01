@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import './signin.css';
+import closed from "../images/eyeclosed.png"
+import open from "../images/eyeopen.png";
 
 const LogIn = ({ setIsSignedIn }) => {
     const [isFullNameFocused, setIsFullNameFocused] = useState(false);
@@ -7,7 +9,9 @@ const LogIn = ({ setIsSignedIn }) => {
     const [isPasswordFocused, setIsPasswordFocused] = useState(false);
     const [password, setPassword] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
+    const [transform, setTransform] = useState(false);
 
+   
     const handleFullNameFocus = () => {
         setIsFullNameFocused(true);
     };
@@ -34,6 +38,8 @@ const LogIn = ({ setIsSignedIn }) => {
 
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
+        setTransform(true);
+        setTimeout(() => setTransform(false), 300); // duration should match your CSS transition time
     };
 
     return (
@@ -57,7 +63,7 @@ const LogIn = ({ setIsSignedIn }) => {
                         htmlFor="fullname"
                         className="placeholder-label"
                     >
-                        Full name
+                        Username
                     </label>
                 </div>
                 <div className="signin-input-container">
@@ -83,7 +89,15 @@ const LogIn = ({ setIsSignedIn }) => {
                         className="view-password-button"
                         onClick={togglePasswordVisibility}
                     >
-                        {passwordVisible ? 'Hide' : 'Show'}
+                    <img 
+                        src={passwordVisible ? open : closed} 
+                        alt={passwordVisible ? "Password visible" : "Password hidden"}
+                        onClick={togglePasswordVisibility}
+                        style={{ cursor: 'pointer' }}
+                        width="20px"
+                        height="20px"
+                        className={`password-visibility ${transform ? 'transform' : ''}`}
+                    />
                     </button>
                 </div>
             </div>

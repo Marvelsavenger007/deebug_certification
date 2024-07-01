@@ -17,6 +17,9 @@ import FlutterDev from './courses/FlutterDev';
 import AndroidDev from './courses/AndroidDev';
 import IOSDeveloper from './courses/IOSDeveloper';
 import SignIn from './components/login/SignIn';
+import Profile from './components/profile/Profile';
+import MyCertificates from './components/certification/MyCertificates';
+import SavedCourses from './components/certification/SavedCourses';
 
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -24,8 +27,8 @@ function App() {
     <BrowserRouter>
       <Navbar isSignedIn={isSignedIn} setIsSignedIn={setIsSignedIn} />
       <Routes>
-      <Route exact path="/" element={<Home />}>
-        <Route path="" element={<Landingpage />} />
+      <Route exact path="" element={<Home />}>
+        <Route path="/" element={<Landingpage />} />
         <Route path="/SignIn" element={<SignIn setIsSignedIn={setIsSignedIn} />} />
         <Route path="/CourseApplication" element={<Application />} />
         <Route path='/ExamApplication' element={<ExamApplication />} />
@@ -39,6 +42,9 @@ function App() {
         <Route path="/Certification/FlutterApplicationDevelopment" element={<FlutterDev />} />
         <Route path="/Certification/AndroidDevelopment" element={<AndroidDev />} />
         <Route path="/Certification/iOSDevelopment" element={<IOSDeveloper />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route  path="/MyCertificates" element={<MyCertificates />} />
+        <Route path="/SavedCourses" element={<SavedCourses />} />
       </Route>
       </Routes>
     </BrowserRouter>

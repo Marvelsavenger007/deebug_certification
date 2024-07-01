@@ -11,21 +11,34 @@
     margin: 5rem auto 3rem auto;
 }
 
+
 .signin-parent > h1{
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 300;
     text-align: left;
     margin: 0;
     color: rgba(18, 18, 18, 1);
+    padding-left: 4rem;
 }
 
 .signin-parent > p{
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: left;
     color: rgba(18, 18, 18, 1);
     margin: 0 0 4rem 0;
+    padding-left: 4rem;
 }
+
+.password-visibility {
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Adjust the duration as needed */
+}
+
+.password-visibility.transform {
+    transform: scale(1.2); /* Adjust the scale as needed */
+}
+
 
 .signin-input-container {
     position: relative;
@@ -36,20 +49,20 @@
 
 .signin-input {
     width: calc(100% - 40px); /* Adjust width to account for the view button */
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 2.3rem;
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid rgba(153, 153, 153, 1);
     border-radius: 10px;
     color: rgba(18, 18, 18, 1);
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin: 0.4rem 0;
 }
 
 .placeholder-label {
     position: absolute;
     top: 50%;
-    left: 2rem;
+    left: 2.5rem;
     transform: translateY(-50%);
     transition: all 0.3s ease;
     pointer-events: none;
@@ -60,8 +73,9 @@
 .signin-input:focus + .placeholder-label,
 .signin-input.not-empty + .placeholder-label {
     top: 30%;
-    left: 2.5rem;
+    left: 3.5rem;
     font-size: 12px;
+    padding-left: 1px;
     color: #666;
 }
 
@@ -89,6 +103,178 @@
     margin: 0 auto 4rem auto;    
 }
 
+.profile-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 1);
+    padding: 2rem 0;
+}
+
+.profile-top > img{
+    border-radius: 50%;
+}
+
+.profile-top > button{
+    background-color: transparent;
+    border: none;
+    color: rgba(0, 103, 184, 1);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.profile-top > h1{
+    margin: 1rem 0 0 0;
+    font-size: 44px;
+    font-weight: 300;
+    color: rgba(18, 18, 18, 1);    
+}
+
+.profile-top > p{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);    
+}
+
+.profile-warning{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgba(255, 244, 206, 1);
+    border-left: 6px solid rgba(255, 197, 0, 1);
+    width:80%;
+    margin: 2rem auto;
+    text-align: left;
+    padding: 0.1rem 1rem 0.1rem 1.5rem;
+}
+
+.profile-warning > img{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.profile-warning p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.81px;
+    text-align: left;
+    color: rgba(18, 18, 18, 1);    
+}
+
+.profile-non-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 78%;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+
+.profile-non-edit > h1{
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.edit-profile-btn1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 103, 184, 1); 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+    border: none;
+}
+
+.registration-form1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem auto 1rem auto;
+    text-align: left;
+}
+
+.registration-form1 > h1{
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    width: 92%;
+    margin-left: auto;
+    margin-bottom: 1rem;
+
+}
+
+.registration-multiple-input1{
+    width: 67%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 1rem;
+    padding-right: 50px; /* Add padding to the right */
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    color: rgba(18, 18, 18, 1);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;  
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    background: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 35px) calc(1em + 2px), calc(100% - 30px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+}
+  
+.registration-multiple-input1 option:disabled {
+    color: #999;
+    opacity: 0.5;
+}
+
+  
+.registration-multiple-input1 option{
+    padding: 1rem 0;
+}
+
+.fixed-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.registration-input1{
+    width: 100%;
+    padding: 1.5rem 1rem 1rem 2rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    color: rgba(18, 18, 18, 1);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.placeholder-label1 {
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 14px;
+    color: #aaa;
+}
+
 
 @media screen and (max-width: 768px){
    .signin-main-container{
@@ -97,15 +283,75 @@
         margin: 0;
     }
 
+    .profile-top > img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .profile-top > button{
+        font-size: 15px;
+    }
+
+    .profile-top > h1{
+        font-size: 2rem;
+    }
+
+    .profile-top > p{
+        font-size: 1.2rem;
+    }
+
+    .profile-warning{
+        width: 88%;
+    }
+    
+    .profile-warning > img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .profile-non-edit{
+        width: 95%;
+    }
+
+    .profile-non-edit > h1{
+        font-size: 1.3rem;
+    }
+
+    .registration-form1 > h1{
+        margin-top: 1rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    .profile-warning  > p{
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+
+    .registration-input1{
+        font-size: 1rem;
+    }
+
+    .placeholder-label1{
+        font-size: 0.7rem;
+    }
+
+    .fixed-input-container{
+        margin: 0;
+        padding: 0;
+        margin-bottom: -1.5rem;
+    }
+
+
    .signin-parent{
         width: 92%;
-        margin: 2rem auto;
+        margin: 1rem auto;
     }
 
    .signin-parent > h1{
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 300;
         text-align: left;
+        margin-top: 1rem
     }   
 
 
@@ -113,23 +359,59 @@
         font-size: 16px;
         font-weight: 400;
         text-align: left;
+        margin: 0;;
+        margin-bottom: 1.5rem;
     }
     
     .signin-input-container{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 1rem auto;
+        margin: 0 1rem 1rem auto;
+    }
+
+    .signin-input:focus + .placeholder-label,
+    .signin-input.not-empty + .placeholder-label {
+        top: 25%;
+        left: 1.5rem;
+        font-size: 12px;
+        padding-left: 1px;
+        color: #666;
     }
 
     .signin-input{
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin: 0;
+        padding-left: 1.5rem;
+        padding-top: 1.6rem;
     }
 
     .sign-up-button{
         margin-top: 4rem;
         margin-bottom: 10rem;
+    }
+    
+    .registration-multiple-input1 {
+        width: 100%; /* Full width on mobile */
+        padding: 1rem 1rem; /* Adjust padding for better spacing */
+        padding-right: 40px; /* Adjust right padding to fit better on mobile */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        margin-bottom: 2rem; /* Reduce bottom margin */
+        background-position: calc(100% - 25px) center, /* Center vertically */
+                            calc(100% - 20px) center, /* Center vertically */
+                            100% 0;
+    }
+
+    .registration-multiple-input1 > option{        
+        width: 80%;
+    }
+
+    .registration-form1{
+        width: 95%;
+    }
+
+    .fixed-input-container{
+        width: 100%;
     }
 }

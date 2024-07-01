@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,300;0,600;0,700;1,100;1,200;1,300;1,400;1,300;1,600;1,700&display=swap');
 
 
 .homepage-bground{
@@ -6,6 +6,7 @@
     flex-direction: row;
     align-items: center;
     width: auto;
+    height: 300px;
     padding: 5%;
     overflow: hidden;    
     background: linear-gradient(93.22deg, #F3F3F3 2.25%, #FFFFFF 44.34%, #F3F3F3 65.52%);
@@ -31,6 +32,8 @@
 .homepage-bground-text > p{
     font-size: 1.5rem;
     font-weight: 400;
+    letter-spacing: normal;
+    word-spacing: 5px;
     text-align: left;
 }
 
@@ -46,13 +49,12 @@
     grid-template-rows: auto auto auto; 
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px; 
-    padding: 10px 0;
-
+    padding: 5px 0;
 }
 
 .courses-main-ctn > label{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1);
     margin-bottom: 5rem;
@@ -63,8 +65,8 @@
 }
 
 .individual-courses{
-    padding: 1.5rem;
-    width: 88%;
+    padding: 0.5rem 1.5rem;
+    width: 84%;
     border-left: 3px solid rgba(0, 103, 184, 1);
     background-color: rgba(243, 243, 243, 1);
     margin: 1.2rem auto;
@@ -72,22 +74,22 @@
 
 .individual-courses > h2{
     font-family: "IBM Plex Mono";
-    letter-spacing: 0.2rem;
-    font-size: 18px;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: left;
 }
 
 .individual-courses > h1{
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 300;
     text-align: left;
     color: rgba(0, 103, 184, 1);
 }
 
 .individual-courses > p{
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     text-align: right;
     color: rgba(0, 103, 184, 1);
 }
@@ -103,6 +105,23 @@
     color: rgba(0, 80, 160, 1);
 }
 
+.individual-courses > button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    color: rgba(0, 103, 184, 1);
+    cursor: pointer;
+}
+
+.courses-images > img{
+    margin-left: 0.5rem;
+
+}
+
+
 .imagelevel{
     display: flex;
     flex-direction: row;
@@ -111,10 +130,18 @@
 }
 
 .imagelevel > p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
     color: rgba(102, 102, 102, 1);
+}
+
+.imagelevel > p > img {
+    margin: 0 0.5rem;
 }
 
 .imagelevel > p > span{
@@ -129,6 +156,7 @@
 
     .homepage-bground-text {
         width: 100%;
+        height: 45vh;
     }
 
     .homepage-bground-img {
@@ -137,12 +165,12 @@
 
     .homepage-bground-text > h1 {
         font-size: 2.1rem;
-        font-weight: 500;
+        font-weight: 300;
         text-align: left;
     }
 
     .homepage-bground-text > p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .courses-main-ctn {
@@ -151,7 +179,7 @@
 
     .courses-main-ctn > label{
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 300;
         text-align: left;
         color: rgba(18, 18, 18, 0.75);
         margin-right: 1rem;
@@ -163,7 +191,7 @@
 
     .individual-courses {
         width: 90%;
-        padding: 1rem;
+        padding: 1rem 0.5;
         margin: 0.2rem 0;
     }
 
@@ -179,7 +207,7 @@
 
     .individual-courses > p {
         font-size: 14px;
-        text-align: left;
+        text-align: right;
     }
 
     .imagelevel {
@@ -189,12 +217,12 @@
     }
 
     .courses-images > img{
-        width: 22px;
-        height: 22px;
-        margin-right: 0.4rem;
+        width: 18px;
+        height: 18px;
+        margin-right: 0.2rem;
     }
 
     .imagelevel > p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

@@ -14,6 +14,7 @@ import sketch from "../components/images/sketch.png";
 import figma from "../components/images/figma.png";
 import vue from "../components/images/vuejs.png";
 import angular from "../components/images/angularjs.png";
+import btn from "../components/images/btn.png"
 
 
 const UXDesign = () => {
@@ -337,7 +338,16 @@ const UXDesign = () => {
                         <h2>Certification</h2>
                         <h1><a href={course.link}>{course.title}</a></h1>
                         <div className='imagelevel'>
-                            <p>Level <span>Beginner</span></p>
+                            <p> 
+                                Level 
+                                <img
+                                    src={btn}
+                                    width="5px"
+                                    height="5px"
+                                    alt='icon'
+                                />
+                                <span>Beginner</span>
+                                </p>
                             <div className='courses-images'>
                                 {course.icons.map((icon, i) => (
                                     <img

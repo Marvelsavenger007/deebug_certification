@@ -10,6 +10,7 @@ import git from "../components/images/github.png";
 import flutter from "../components/images/flutter.png";
 import dart from "../components/images/dart.png";
 import kotlin from "../components/images/kotlin.png";
+import btn from "../components/images/btn.png"
 
 
 const IOSDeveloper = () => {
@@ -315,7 +316,16 @@ const IOSDeveloper = () => {
                         <h2>Certification</h2>
                         <h1><a href={course.link}>{course.title}</a></h1>
                         <div className='imagelevel'>
-                            <p>Level <span>Beginner</span></p>
+                            <p> 
+                                Level 
+                                <img
+                                    src={btn}
+                                    width="5px"
+                                    height="5px"
+                                    alt='icon'
+                                />
+                                <span>Beginner</span>
+                                </p>
                             <div className='courses-images'>
                                 {course.icons.map((icon, i) => (
                                     <img

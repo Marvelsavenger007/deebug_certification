@@ -1,0 +1,103 @@
+.profile-form-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.edit-profile-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form section {
+  margin-bottom: 20px;
+}
+
+.profile-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-container input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-form.non-editable input {
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+}
+
+.profile-form.editable input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.signin-input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px; /* Add some margin between the inputs */
+}
+
+.signin-input {
+  width: calc(100% - 40px); /* Adjust width to account for the view button */
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid rgba(153, 153, 153, 1);
+  border-radius: 10px;
+  color: rgba(18, 18, 18, 1);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.placeholder-label {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.signin-input:focus + .placeholder-label,
+.signin-input.not-empty + .placeholder-label {
+  top: 30%;
+  left: 2.5rem;
+  font-size: 12px;
+  color: #666;
+}
+
+.view-password-button {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

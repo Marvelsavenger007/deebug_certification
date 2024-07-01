@@ -19,7 +19,7 @@ const CertificationRenewal = () => {
             <div className='certify-image'>
                 <img
                     src={ribbon}
-                    width="500px"
+                    width="300px"
                     height="580px"
                     alt='ribbon'
                 />

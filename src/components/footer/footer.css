@@ -1,10 +1,11 @@
 .footer-ctn{
+    margin-top: 10vh;
     padding: 0.5rem 5%;
-    background-color: rgba(243, 243, 243, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .footer-props{
-    width: 70%;
+    width: 50%;
 }
 
 .footer-top{
@@ -15,7 +16,7 @@
 
 .footer-top > h1{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
     text-align: left;
     margin-left: 1rem;
 }
@@ -42,7 +43,7 @@
     color: rgba(18, 18, 18, 1);
 }
 
-.footer-images > img{
+.footer-images > a > img{
     margin-left: 1rem;
 }
 
@@ -62,8 +63,7 @@
 
     .footer-bottom{
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .footer1{
@@ -74,6 +74,9 @@
     }
 
     .footer1 > p{
+        flex: 1 1 100%; /* Make each item take full width initially */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+        padding: 10px; /* Optional: add some padding */
         font-size: 1rem;
         margin: 0.5rem 0;
     }

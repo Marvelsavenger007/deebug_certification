@@ -19,11 +19,10 @@ import kotlin from "../components/images/kotlin.png";
 import figma from "../components/images/figma.png";
 import flutter from "../components/images/flutter.png";
 import dart from "../components/images/dart.png";
-import {useNavigate} from "react-router-dom";
+import btn from "../components/images/btn.png"
 
 const Landingpage = () => {
     const [selectedFilter, setSelectedFilter] = useState('all');
-    const navigate = useNavigate();
 
     const courses = [
         {
@@ -103,8 +102,8 @@ const Landingpage = () => {
             <div className='homepage-bground-img'>
                 <img
                     src={deebug3d}
-                    width="100%"
-                    height="100%"
+                    width="900px"
+                    height="170%"
                     alt='Deebug'
                 />
             </div>
@@ -126,7 +125,16 @@ const Landingpage = () => {
                                 <h2>Certification</h2>
                                 <h1><a href={course.link}>{course.title}</a></h1>
                                 <div className='imagelevel'>
-                                    <p>Level <span>Beginner</span></p>
+                                    <p> 
+                                        Level 
+                                        <img
+                                            src={btn}
+                                            width="5px"
+                                            height="5px"
+                                            alt='icon'
+                                        />
+                                        <span>Beginner</span>
+                                        </p>
                                     <div className='courses-images'>
                                         {course.icons.map((icon, i) => (
                                             <img
@@ -148,9 +156,6 @@ const Landingpage = () => {
                     }
                 })}
             </div>
-            <button className='register-finish-btn' onClick={() => navigate("/CourseApplication")}>Application</button>
-            <button className='register-finish-btn' onClick={() => navigate("/CertificationRenewal")}>renewal</button>
-            <button className='register-finish-btn' onClick={() => navigate("/ExamApplication")}>exam</button>
         </div>
     </div>
   )
