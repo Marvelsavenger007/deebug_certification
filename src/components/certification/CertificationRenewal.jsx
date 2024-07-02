@@ -1,6 +1,7 @@
 import React from 'react';
 import "./certification.css";
 import ribbon from "../images/ribbon.webp";
+import certify from "../images/certifyrenew.webp";
 
 const CertificationRenewal = () => {
   return (
@@ -19,8 +20,8 @@ const CertificationRenewal = () => {
             <div className='certify-image'>
                 <img
                     src={ribbon}
-                    width="300px"
-                    height="580px"
+                    width="306px"
+                    height="475px"
                     alt='ribbon'
                 />
             </div>
@@ -54,8 +55,24 @@ const CertificationRenewal = () => {
                     </p>
                 </div>
             </div>
-            <h1>Stay Deebug certified</h1>
-            <p>Renew your certificate in three easy steps</p>
+            <div className='certificate-img-ctn'>
+                <img
+                    src={certify}
+                    width="100%"
+                    height="100%"
+                    alt='icon'
+                />
+                <div className='certificate-img-text'>
+                    <h1>Stay Deebug certified</h1>
+                    <p>
+                        Renewing your certification is essential to maintaining 
+                        your competitive edge in the tech industry. Stay current 
+                        with the latest advancements, enhance your skills, and keep 
+                        them sharp to stay ahead of the curve.
+                    </p>
+                </div>
+            </div>
+            <h1>Renew your certificate in three easy steps</h1>
             <div className='deebug-certified'>
                 <div className='deebug-cert-props'>
                     <h1>1</h1>
@@ -68,6 +85,23 @@ const CertificationRenewal = () => {
                 <div className='deebug-cert-props'>
                     <h1>3</h1>
                     <p>Pass the exam to get your deebug certification renewed before it expires.</p>
+                </div>
+            </div>
+            <div className='certificate-img-ctn'>
+                <img
+                    src={certify}
+                    width="100%"
+                    height="100%"
+                    alt='icon'
+                />
+                <div className='certificate-img-text'>
+                    <h1>Stay Deebug certified</h1>
+                    <p>
+                        Renewing your certification is essential to maintaining 
+                        your competitive edge in the tech industry. Stay current 
+                        with the latest advancements, enhance your skills, and keep 
+                        them sharp to stay ahead of the curve.
+                    </p>
                 </div>
             </div>
         </div>

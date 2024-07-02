@@ -20,15 +20,15 @@ import btn from "../components/images/btn.png"
 
 const MobileDev = () => {
     const courses1 = [
-      { course: "Introduction to Mobile App Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Basics of Programming and Mobile Development Tools", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "User Interface (UI) Design for Mobile Apps", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Introduction to Mobile App Development Platforms", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Building Your First Mobile App", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Topics in Mobile App Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Working with APIs and Integrating Backend Services", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Testing and Deployment", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to Mobile App Development", content: ['Understanding mobile platforms (iOS, Android).', 'Differences between mobile and web applications.', 'Types of mobile apps (native, hybrid, web).', 'Introduction to frameworks like React Native and Swift.'] }, 
+      { course: "Basics of Programming and Mobile Development Tools", content: ['Basics of programming languages (Java, Kotlin, Swift).', 'Introduction to IDEs (Android Studio, Xcode).', 'Overview of SDKs and APIs.', 'Introduction to React Native and Swift frameworks.'] },
+      { course: "User Interface (UI) Design for Mobile Apps", content: ['Designing for different screen sizes and resolutions.', 'User interaction and navigation.', 'Introduction to wireframing and prototyping tools.', 'UI design in React Native and Swift.'] },
+      { course: "Introduction to Mobile App Development Platforms", content: ['iOS app development ecosystem.', 'Android app development ecosystem.', 'Comparison between iOS and Android platforms.', 'Introduction to React Native and its advantages.'] },
+      { course: "Building Your First Mobile App", content: ['Setting up a development environment.', 'Creating a basic user interface.', 'Implementing functionality and navigation.', 'Testing and debugging.', 'State management in React Native and Swift.'] },
+      { course: "Advanced Topics in Mobile App Development", content: ['Advanced UI/UX design principles.', 'Data storage and management.', 'Security considerations in mobile app development.', 'Performance optimization.', 'Deep linking and navigation in React Native and Swift.'] },
+      { course: "Working with APIs and Integrating Backend Services", content: ['Understanding RESTful APIs.', 'Making HTTP requests.', 'Authentication and authorization.', 'Handling JSON data.', 'Firebase integration with React Native and Swift.'] },
+      { course: "Testing and Deployment", content: ['Different types of testing (unit testing, integration testing, user testing).', 'App deployment process.', 'Publishing apps to app stores (Google Play Store, Apple App Store).', 'Continuous integration and delivery.'] },
+      { course: "Version Control and Collaboration", content: ['Version Control System Implementation with Git and GitHub', 'Collaboration Practices for Software Development', 'Branching Strategies and Pull Requests'] },
     ];
 
     
@@ -37,19 +37,19 @@ const MobileDev = () => {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            link: "/certification/ux-design"
         },
         {
             title: 'Deebug Institute Certified: Backend (NodeJS & Express) Software Developer',
             category: 'software-development',
             icons: [node, spring, git, django],
-            link: "/Certification/Backend(NodeJS&Express)SoftwareDevelopement"
+            link: "/certification/backend-nodejs-express-software-development"
         },
     ];
 
@@ -297,7 +297,7 @@ const MobileDev = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

@@ -19,65 +19,71 @@ import kotlin from "../components/images/kotlin.png";
 import figma from "../components/images/figma.png";
 import flutter from "../components/images/flutter.png";
 import dart from "../components/images/dart.png";
-import btn from "../components/images/btn.png"
+import btn from "../components/images/btn.png";
+import filter from "../components/images/filter.png";
 
 const Landingpage = () => {
     const [selectedFilter, setSelectedFilter] = useState('all');
+    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownVisible(!isDropdownVisible);
+    };
 
     const courses = [
         {
             title: 'Deebug Institute Certified: Full Stack (MERN) Software Development',
             category: 'software-development',
             icons: [express, react, node, git, mongo],
-            link: "/Certification/FullStack(MERN)SoftwareDevelopment"
+            link: "/certification/fullstack-mern-software-development"
         },
         {
             title: 'Deebug Institute Certified: Backend (NodeJS & Express) Software Developer',
             category: 'software-development',
             icons: [node, spring, git, django],
-            link: "/Certification/Backend(NodeJS&Express)SoftwareDevelopement"
+            link: "/certification/backend-nodejs-express-software-development"
         },
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
             category: 'software-development',
             icons: [react, vue, git, angular],
-            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
+            link: "/certification/frontend-reactjs-software-development"
         },
         {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            link: "/certification/ux-design"
         },
         {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: Complete Mobile Application Developer',
             category: 'app-development',
             icons: [react, swift, xcode, kotlin],
-            link: "/Certification/MobileApplicationDevelopment"
+            link: "/certification/mobile-application-development"
         },
         {
             title: 'Deebug Institute Certified: Flutter Application Developer',
             category: 'app-development',
             icons: [flutter, dart, git],
-            link: "/Certification/FlutterApplicationDevelopment"
+            link: "/certification/flutter-application-development"
         },
         {
             title: 'Deebug Institute Certified: Android Developer',
             category: 'app-development',
             icons: [kotlin],
-            link: "/Certification/AndroidDevelopment"
+            link: "/certification/android-development"
         },
         {
             title: 'Deebug Institute Certified: iOS Developer',
             category: 'app-development',
             icons: [xcode],
-            link: "/Certification/iOSDevelopment"
+            link: "/certification/ios-devlopment"
         },
     ];
 
@@ -109,14 +115,29 @@ const Landingpage = () => {
             </div>
         </div>
         <div className='courses-main-ctn'>
-            <label>Filter</label>
-            <select id="course-filter" onChange={handleFilterChange} value={selectedFilter}>
-                <option value="all">All Courses</option>
-                <option value="app-development">App Development</option>
-                <option value="design">Design</option>
-                <option value="research">Research</option>
-                <option value="software-development">Software Development</option>
+        <div className="filter-container">
+        <label className="filter-label">Filter</label>
+        <div className="filter-dropdown">
+            <img
+            src={filter}
+            alt="Filter"
+            className="filter-icon"
+            onClick={toggleDropdown}
+            />
+            <select
+            id="course-filter"
+            onChange={handleFilterChange}
+            value={selectedFilter}
+            className={`filter-select ${isDropdownVisible ? 'visible' : ''}`}
+            >
+            <option value="all">All Courses</option>
+            <option value="app-development">App Development</option>
+            <option value="design">Design</option>
+            <option value="research">Research</option>
+            <option value="software-development">Software Development</option>
             </select>
+        </div>
+        </div>
             <div className='courses-container'>
                 {courses.map((course, index) => {
                     if (selectedFilter === 'all' || course.category === selectedFilter) {

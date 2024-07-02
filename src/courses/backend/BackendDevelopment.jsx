@@ -19,13 +19,13 @@ import btn from "../../components/images/btn.png"
 
 const BackendDevelopment = () => {
     const courses1 = [
-      { course: "Fundamentals of Software Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] },
-      { course: "Backend Development Fundamentals", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Database Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Backend Testing and Security", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Backend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Fundamentals of Software Development", content: ['Introduction to Programming', 'Data Structures and Algorithms', 'Understanding Time and Space Complexity'] },
+      { course: "Backend Development Fundamentals", content: ['Introduction to Backend Development', 'Backend Frameworks (e.g., Express.js, Django, Spring Boot)', 'RESTful API and GraphQL', 'Microservices Architecture'] },
+      { course: "DevOps Practices", content: ['Agile Development Methodology', 'Continuous Integration and Continuous Delivery (CI/CD)', 'Containerization with Docker', 'Container Orchestration with Kubernetes', 'Cloud Management with Amazon S3'] },
+      { course: "Database Management", content: ['Introduction to Database Technologies', 'MongoDB Shell', 'Redis', 'Caching Mechanisms', 'Message Brokers (e.g., RabbitMQ, Kafka)'] },
+      { course: "Backend Testing and Security", content: ['Automation Testing', 'Testing Frameworks (e.g., Jest, Mocha)', 'Test-Driven Development (TDD) and Behavior-Driven Development (BDD)', 'Security Practices for Backend Development', 'Protecting Applications from Vulnerabilities'] },
+      { course: "Advanced Backend Development", content: ['Internationalization', 'Working with Open AI APIs in Node.js', 'Scalability and Building Systems for Increased Load', 'Performance Optimization Techniques', 'Using Redis for Caching'] },
+      { course: "Version Control and Collaboration", content: ['Version Control System Implementation with Git and GitHub', 'Collaboration Practices for Software Development', 'Branching Strategies and Pull Requests',] },
     ];
 
     
@@ -34,19 +34,19 @@ const BackendDevelopment = () => {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            link: "/certification/ux-design"
         },
         {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
             category: 'software-development',
             icons: [react, vue, git, angular],
-            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
+            link: "/certification/frontend-reactjs-software-development"
         },
     ];
 
@@ -287,7 +287,7 @@ const BackendDevelopment = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

@@ -16,24 +16,24 @@ import btn from "../components/images/btn.png"
 
 const FlutterDev = () => {
     const courses1 = [
-      { course: "Introduction to Flutter Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Building User Interfaces with Flutter", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "State Management in Flutter", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Navigation and Routing in Flutter", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Networking and Data Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Firebase Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Push Notifications and Cloud Messaging", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Handling Device Features and Sensors", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Testing and Debugging Techniques", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Internationalization and Localization", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Introduction to Data Structures and Algorithms", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Agile Development and DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Automation Testing", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Bash (Unix Shell)", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Security Considerations", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Deployment and Continuous Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Topics and Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to Flutter Development", content: ['Overview of Flutter framework and its advantages.', 'Setting up the development environment (IDE installation, Flutter SDK setup).', 'Getting started with the Flutter project structure.', 'Introduction to Dart programming language: variables, data types, functions, control structures.'] }, 
+      { course: "Building User Interfaces with Flutter", content: ['Widget tree and widget types in Flutter.', 'Layouts and arrangement widgets (Container, Row, Column, Stack).', 'Styling and theming in Flutter applications.', 'Handling user input (Text fields, Buttons, Gestures).'] },
+      { course: "State Management in Flutter", content: ['Understanding the concept of state in Flutter.', 'Stateless vs. Stateful widgets.', 'Managing state using setState method.', 'Introduction to advanced state management techniques (Provider, Bloc pattern).'] },
+      { course: "Navigation and Routing in Flutter", content: ['Navigation basics: Routes and Navigator.', 'Navigation stacks and route management.', 'Deep linking and route parameters.', 'Handling navigation transitions and animations.'] },
+      { course: "Networking and Data Management", content: ['Making HTTP requests with Flutter (using http package).', 'Consuming RESTful APIs.', 'Serializing and deserializing JSON data.', 'Data persistence options: GetX, Realm and SQLite databases.'] },
+      { course: "Firebase Integration", content: ['Introduction to Firebase services (Firestore, Authentication, Cloud Messaging).', 'Setting up the Firebase project and configuration in Flutter.', 'Real-time data synchronization with Firestore.', 'User authentication and authorization with Firebase Authentication.'] },
+      { course: "Push Notifications and Cloud Messaging", content: ['Implementing push notifications using Firebase Cloud Messaging (FCM).', 'Handling push notification payloads and message types.', 'Integrating additional push notification services (e.g., OneSignal).'] },
+      { course: "Handling Device Features and Sensors", content: ['Accessing device hardware and sensors in Flutter.', 'Camera access and image capture.', 'Location services and geolocation.', 'Using platform channels for platform-specific features.'] },
+      { course: "Testing and Debugging Techniques", content: ['Writing unit tests and integration tests for Flutter applications.', 'Test-driven development (TDD) approach.', 'Debugging techniques and tools (Flutter DevTools, Logging).'] },
+      { course: "Internationalization and Localization", content: ['Implementing internationalization and localization in Flutter.', 'Supporting multiple languages and locales.', 'Managing translated strings and resources.'] },
+      { course: "Introduction to Data Structures and Algorithms", content: [ 'Overview of various types of data structures (arrays, linked lists, trees, graphs).', 'Understanding time and space complexity.', 'Introduction to common searching and sorting algorithms.'] },
+      { course: "Agile Development and DevOps Practices", content: ['Introduction to agile development methodologies.', 'Understanding DevOps principles and practices.', 'Continuous integration and continuous deployment (CI/CD) pipelines.'] },
+      { course: "Automation Testing", content: ['Automated testing techniques for Flutter applications.', 'UI testing frameworks (e.g., Flutter Driver, Integration testing).'] },
+      { course: "Bash (Unix Shell)", content: ['Introduction to Unix shell scripting.', 'Basic shell commands and scripting techniques.', 'Automation tasks using shell scripts.', '', ''] },
+      { course: "Security Considerations", content: ['Understanding common security threats in mobile applications.', 'Secure storage and data encryption.', 'Implementing authentication and authorization mechanisms.', 'Best practices for secure coding and network communication.'] },
+      { course: "Deployment and Continuous Integration", content: [ 'Preparing Flutter apps for deployment to app stores (Android and iOS).', 'Setting up CI/CD pipelines using GitHub Actions, Codemagic, or Bitrise.', 'Automated testing and deployment processes.', 'App store submission and release management.'] },
+      { course: "Version Control and Collaboration", content: ['Version Control System Implementation with Git and GitHub',  'Collaboration Practices for Software Development', 'Branching Strategies and Pull Requests'] },
+      { course: "Advanced Topics and Integration", content: ['How to read and understand documentation', 'Integration of AI and ML models in Flutter applications (TensorFlow Lite).', 'Biometric authentication (fingerprint, face recognition) integration.', 'Flutter flame engine', 'Payment gateway integration (e.g., Paystack, Opay) for processing payments.', 'Advanced animations and custom UI effects.', 'Google Maps implementation'] },
     ];
 
     
@@ -42,13 +42,13 @@ const FlutterDev = () => {
             title: 'Deebug Institute Certified: Flutter Application Developer',
             category: 'app-development',
             icons: [flutter, dart, git],
-            link: "/Certification/FlutterApplicationDevelopment"
+            link: "/certification/flutter-application-development"
         },
         {
             title: 'Deebug Institute Certified: iOS Developer',
             category: 'app-development',
             icons: [xcode],
-            link: "/Certification/iOSDevelopment"
+            link: "/certification/ios-devlopment"
         },
     ];
 
@@ -298,7 +298,7 @@ const FlutterDev = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

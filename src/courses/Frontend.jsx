@@ -15,13 +15,13 @@ import btn from "../components/images/btn.png"
 
 const Frontend = () => {
     const courses1 = [
-      { course: "Fundamentals of Web Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Frontend Development Essentials", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "Data Structures and Algorithms", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Testing and Quality Assurance", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Agile Development and DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Frontend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Emerging Technologies and Specializations", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Fundamentals of Web Development", content: ['Introduction to HTML, CSS, and JavaScript', 'Understanding the Document Object Model (DOM)', 'Introduction to Version Control with Git and GitHub', 'Basics of Command Line and Bash (Unix Shell)'] }, 
+      { course: "Frontend Development Essentials", content: ['Advanced JavaScript Techniques', 'Responsive Design Principles', 'Bootstrap for Application Customization', 'Leveraging Frontend Frameworks: React, Angular, Vue.js', 'Introduction to Redux and Context API for State Management'] },
+      { course: "Data Structures and Algorithms", content: ['Introduction to Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs', 'Understanding Time and Space Complexity', 'Searching and Sorting Algorithms', 'Algorithmic Problem Solving Techniques'] },
+      { course: "Testing and Quality Assurance", content: ['Automation Testing Fundamentals', 'Testing React Applications with React Testing Library', 'Comprehensive Frontend Testing with JEST', 'Introduction to Test-Driven Development (TDD)',] },
+      { course: "Agile Development and DevOps Practices", content: ['Introduction to Agile Software Development Methodologies', 'Understanding Scrum Framework', 'Continuous Integration and Continuous Deployment (CI/CD) Pipelines', 'DevOps Principles and Best Practices'] },
+      { course: "Advanced Frontend Development", content: ['Implementing Reducers and Custom Hooks in React', 'Efficient API Calls in ReactJS using Fetch and Axios', 'JSX Transform and Code Optimization Techniques', 'Performance Optimization Strategies',] },
+      { course: "Emerging Technologies and Specializations", content: ['Integration of Artificial Intelligence and Machine Learning in Web Applications', 'Introduction to Web3 and Building Decentralized Applications (DApps)', 'WebSocket Communication for Real-Time Web Applications', 'Internationalization (i18n) and Localization Techniques'] },
     ];
 
     
@@ -30,13 +30,13 @@ const Frontend = () => {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            link: "/certification/ux-design"
         },
     ];
 
@@ -307,7 +307,7 @@ const Frontend = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

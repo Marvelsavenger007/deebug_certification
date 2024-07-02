@@ -19,19 +19,19 @@ import btn from "../components/images/btn.png"
 
 const Fullstack = () => {
     const courses1 = [
-      { course: "Fundamentals of Web Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Frontend Development Essentials", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "Data Structures and Algorithms", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Testing and Quality Assurance", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Agile Development and DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Frontend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Emerging Technologies and Specializations", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Backend Development Fundamentals", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "DevOps Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Database Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Backend Testing and Security", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Backend Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control and Collaboration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Fundamentals of Web Development", content: ['Introduction to HTML, CSS, and JavaScript', 'Understanding the Document Object Model (DOM)', 'Introduction to Version Control with Git and GitHub', 'Basics of Command Line and Bash (Unix Shell)'] }, 
+      { course: "Frontend Development Essentials", content: ['Advanced JavaScript Techniques', 'Responsive Design Principles', 'Bootstrap for Application Customization', 'Leveraging Frontend Frameworks: React, Angular, Vue.js', 'Introduction to Redux and Context API for State Management'] },
+      { course: "Data Structures and Algorithms", content: ['Introduction to Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs', 'Understanding Time and Space Complexity', 'Searching and Sorting Algorithms', 'Algorithmic Problem Solving Techniques'] },
+      { course: "Testing and Quality Assurance", content: ['Automation Testing Fundamentals', 'Testing React Applications with React Testing Library', 'Comprehensive Frontend Testing with JEST', 'Introduction to Test-Driven Development (TDD)',] },
+      { course: "Agile Development and DevOps Practices", content: ['Introduction to Agile Software Development Methodologies', 'Understanding Scrum Framework', 'Continuous Integration and Continuous Deployment (CI/CD) Pipelines', 'DevOps Principles and Best Practices'] },
+      { course: "Advanced Frontend Development", content: ['Implementing Reducers and Custom Hooks in React', 'Efficient API Calls in ReactJS using Fetch and Axios', 'JSX Transform and Code Optimization Techniques', 'Performance Optimization Strategies',] },
+      { course: "Emerging Technologies and Specializations", content: ['Integration of Artificial Intelligence and Machine Learning in Web Applications', 'Introduction to Web3 and Building Decentralized Applications (DApps)', 'WebSocket Communication for Real-Time Web Applications', 'Internationalization (i18n) and Localization Techniques'] },
+      { course: "Backend Development Fundamentals", content: ['Introduction to Backend Development', 'Backend Frameworks (e.g., Express.js, Django, Spring Boot)', 'RESTful API and GraphQL', 'Microservices Architecture'] },
+      { course: "DevOps Practices", content: ['Agile Development Methodology (Scrum framework for project management)', 'Continuous Integration and Continuous Delivery (CI/CD)Containerization with Docker', 'Container Orchestration with Kubernetes', 'Cloud Management with Amazon S3'] },
+      { course: "Database Management", content: ['Introduction to Database Technologies (relational vs. NoSQL)', 'MongoDB Shell (working with MongoDB databases)', 'Redis (in-memory data store for caching)', 'Caching Mechanisms (improving performance)', 'Message Brokers (e.g., RabbitMQ, Kafka) (communication between services)'] },
+      { course: "Backend Testing and Security", content: ['Automation Testing', 'Testing Frameworks (e.g., Jest, Mocha)', 'Test-Driven Development (TDD) and Behavior-Driven Development (BDD)', 'Security Practices for Backend Development', 'Protecting Applications from Vulnerabilities'] },
+      { course: "Advanced Backend Development", content: ['Internationalization (adapting backend for different languages)', 'Working with Open AI APIs in Node.js (integrating AI/ML into apps)', 'Scalability and Building Systems for Increased Load (handling high traffic)', 'Performance Optimization Techniques (optimizing backend code)', 'Using Redis for Caching (improving data retrieval speed)'] },
+      { course: "Version Control and Collaboration", content: ['Version Control System Implementation with Git and GitHub', 'Collaboration Practices for Software Development', 'Branching Strategies and Pull Requests'] },
     ];
 
     
@@ -330,7 +330,7 @@ const Fullstack = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

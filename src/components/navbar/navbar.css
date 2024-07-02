@@ -9,10 +9,17 @@
     height: 6vh;
 }
 
+.search-profile-ctn{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar-title{
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .navbar-title > h1{
@@ -21,6 +28,41 @@
     font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1);
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    margin-left: 8px;
+    border: none;
+    outline: none;
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.search-container.expanded .search-input {
+    width: 40vw;
+    padding: 5px 10px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 3.5rem;
+    margin-left: -2rem;
 }
 
 .nav-signin{
@@ -144,9 +186,33 @@
 
 
 @media screen and (max-width: 768px) {
+    .search-profile-ctn{
+        background-color: aqua;
+    }
+
+    .navbar-container {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: auto;
+        gap: 10px; /* Adjust gap as needed */
+    }
+    
+    .navbar-title {
+        grid-column: 1 / 2;
+    }
+    
+    
+
+    .search-container{
+        width: fit-content;
+        justify-self: end;
+    }
+
+
     .navbar-modal{
         width: 70vw;
         padding: 1rem 1.5rem;
+        margin-left: 1rem;
     }
 
     .navbar-title > h1{
@@ -182,6 +248,35 @@
 
     .profile-content > p > a{
         font-size: 1rem;
+    }
+
+    .nav-signin{
+        font-size: 1rem;
+    }
+
+
+    .search-container {
+        justify-content: center;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .search-container.expanded .search-input {
+        display: inline-block;
+        width: 170px;
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+        transition: width 0.3s ease, padding 0.3s ease;
+        font-size: 0.8rem;
+        padding-left: 2.3rem;
+        margin-right: 1rem;
+    }
+
+    .search-container > .search-icon {
+        width: 15px;
+        height: 15px;
     }
 
 

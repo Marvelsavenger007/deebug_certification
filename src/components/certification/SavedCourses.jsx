@@ -16,7 +16,7 @@ const SavedCourses = () => {
             title: 'Deebug Institute Certified: Full Stack (MERN) Software Development',
             category: 'software-development',
             icons: [express, react, node, git, mongo],
-            link: "/Certification/FullStack(MERN)SoftwareDevelopment"
+            link: "/certification/fullstack-mern-software-development"
         },
     ]
 

@@ -87,6 +87,14 @@
     color: rgba(0, 103, 184, 1);
 }
 
+#course-filter{
+    padding: 1rem 0.2rem 1rem 1rem;
+    margin-left: 1em;
+    border: 1.7px solid rgba(153, 153, 153, 1);
+    border-radius: 4px;
+}
+
+
 .individual-courses > p{
     font-size: 15px;
     font-weight: 400;
@@ -147,6 +155,46 @@
 .imagelevel > p > span{
     list-style-type: circle;
 }
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+  
+.filter-label {
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(18, 18, 18, 1);
+    display: block;
+}
+
+.filter-dropdown {
+    position: relative;
+}
+
+.filter-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.filter-select {
+    width: 90%;
+    max-width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.filter-select.visible {
+    display: block;
+    opacity: 1;
+}
+  
 
 @media screen and (max-width: 768px) {
     .homepage-bground {
@@ -224,5 +272,37 @@
 
     .imagelevel > p {
         font-size: 14px;
+    }
+
+    .filter-container{
+        display: flex;
+        flex-direction: row-reverse;
+        width: fit-content;
+    }
+
+    
+    .filter-label {
+        display: block;
+        margin-left: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .filter-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .filter-select {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 10;
+        width: 44vw;
+    }
+
+    .filter-select.visible {
+        display: block;
     }
 }

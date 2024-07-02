@@ -24,9 +24,9 @@ const Footer = () => {
                     <p>Privacy Policy</p>
                     <p>Terms of Use</p>
                 {/* </div> */}
-                {/* <div className='footer1'> */}
+                <div className='footer1'>
                     <p>© Deebug 2024</p>
-                {/* </div> */}
+                </div>
                 <div className='footer-images'>
                     <a href='https://www.facebook.com/Deebugstudios?mibextid=LQQJ4d'>
                         <img

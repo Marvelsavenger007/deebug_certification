@@ -29,22 +29,22 @@ function App() {
       <Routes>
       <Route exact path="" element={<Home />}>
         <Route path="/" element={<Landingpage />} />
-        <Route path="/SignIn" element={<SignIn setIsSignedIn={setIsSignedIn} />} />
-        <Route path="/CourseApplication" element={<Application />} />
-        <Route path='/ExamApplication' element={<ExamApplication />} />
-        <Route path="/CertificationRenewal" element={<CertificationRenewal />} />
-        <Route path='/Certification/Backend(NodeJS&Express)SoftwareDevelopement' element={<BackendDevelopment />} />
-        <Route path="/Certification/FullStack(MERN)SoftwareDevelopment" element={<Fullstack />} />
-        <Route path="/Certification/Frontend(ReactJS)SoftwareDevelopment" element={<Frontend />} />
-        <Route path="/Certification/UXDesign" element={<UXDesign />} />
-        <Route path="/Certification/UIDesign" element={<UIDesign />} />
-        <Route path="/Certification/MobileApplicationDevelopment" element={<MobileDev />} />
-        <Route path="/Certification/FlutterApplicationDevelopment" element={<FlutterDev />} />
-        <Route path="/Certification/AndroidDevelopment" element={<AndroidDev />} />
-        <Route path="/Certification/iOSDevelopment" element={<IOSDeveloper />} />
-        <Route path="/Profile" element={<Profile />} />
-        <Route  path="/MyCertificates" element={<MyCertificates />} />
-        <Route path="/SavedCourses" element={<SavedCourses />} />
+        <Route path="/sign-in" element={<SignIn setIsSignedIn={setIsSignedIn} />} />
+        <Route path="/course-application" element={<Application />} />
+        <Route path='/exam-application' element={<ExamApplication />} />
+        <Route path="/certification-renewal" element={<CertificationRenewal />} />
+        <Route path='/certification/backend-nodejs-express-software-development' element={<BackendDevelopment />} />
+        <Route path="/certification/fullstack-mern-software-development" element={<Fullstack />} />
+        <Route path="/certification/frontend-reactjs-software-development" element={<Frontend />} />
+        <Route path="/certification/ux-design" element={<UXDesign />} />
+        <Route path="/certification/ui-design" element={<UIDesign />} />
+        <Route path="/certification/mobile-application-development" element={<MobileDev />} />
+        <Route path="/certification/flutter-application-development" element={<FlutterDev />} />
+        <Route path="/certification/android-development" element={<AndroidDev />} />
+        <Route path="/certification/ios-devlopment" element={<IOSDeveloper />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route  path="/my-certificates" element={<MyCertificates />} />
+        <Route path="/saved-courses" element={<SavedCourses />} />
       </Route>
       </Routes>
     </BrowserRouter>

@@ -19,18 +19,18 @@ import btn from "../components/images/btn.png"
 
 const UIDesign = () => {
     const courses1 = [
-      { course: "Introduction to UI Design", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Design Fundamentals", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "User Interface Design Patterns", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Interaction Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Visual Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Design Tools and Software", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Designing for Digital Health", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Designing for Business", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "UI Design Best Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Portfolio Development and Career Growth", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Topics in UI Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Capstone Project", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to UI Design", content: ['Definition and importance of UI design', 'User-centered design principles', 'Design thinking process', 'UI design process'] }, 
+      { course: "Design Fundamentals", content: ['Color theory and color systems', 'Typography and font selection', 'Layout and composition principles', 'Visual hierarchy and design principles'] },
+      { course: "User Interface Design Patterns", content: ['Navigation patterns (tab bars, sidebars, dropdowns)', 'Search patterns (search bars, filters, facets)', 'Form patterns (input fields, buttons, labels)', 'Alert and notification patterns'] },
+      { course: "Interaction Design", content: ['Interaction design principles', 'Micro-interactions and animations', 'Designing for behavior change', 'Persuasive design and nudges'] },
+      { course: "Visual Design", content: ['Designing for digital products (screens, interactions, accessibility)', 'Designing for mobile and responsive design', 'Designing for wearables and emerging technologies',] },
+      { course: "Design Tools and Software", content: ['Sketching and wireframing tools (Figma, Sketch, Adobe XD)', 'Prototyping tools (InVision, Figma, Adobe XD)', 'Design systems and style guides', 'Knowledge of iOS app design principles, including the Human Interface Guidelines.', 'Knowledge of Android app design principles, including the Material Guidelines.', 'Google workspace tools'] },
+      { course: "Designing for Digital Health", content: ['Healthcare industry overview', 'Designing for patient engagement', 'Designing for healthcare professionals'] },
+      { course: "Designing for Business", content: ['Designing for business goals (conversion rate optimization, sales funnel optimization)', 'Designing for user engagement (personalization, recommendations)', 'Designing for scalability and growth'] },
+      { course: "UI Design Best Practices", content: ['Design principles and guidelines', 'Designing for ethics and privacy', 'Designing for accessibility and inclusive design'] },
+      { course: "Portfolio Development and Career Growth", content: ['Building a UI design portfolio', 'Resume and cover letter writing', 'Interview preparation and career growth'] },
+      { course: "Capstone Project", content: ['Applying UI design principles to a real-world project', 'Developing a case study and presenting to stakeholders'] },
+      { course: "Advanced Topics in UI Design", content: ['Designing for emerging technologies (AR, VR, AI)', 'Designing for internationalization and localization', 'Designing for multiple devices and platforms', 'Designing for voice UI and conversational interfaces', 'Designing for accessibility and inclusive design', 'Designing for security and privacy', 'Designing for gamification and engagement', 'Designing for personalization and recommendations'] },
     ];
 
     
@@ -39,13 +39,13 @@ const UIDesign = () => {
             title: 'Deebug Institute Certified: UX Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UXDesign"
+            link: "/certification/ux-design"
         },
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
             category: 'software-development',
             icons: [react, vue, git, angular],
-            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
+            link: "/certification/frontend-reactjs-software-development"
         },
     ];
 
@@ -310,7 +310,7 @@ const UIDesign = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

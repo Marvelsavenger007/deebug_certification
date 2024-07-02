@@ -15,32 +15,32 @@ import btn from "../components/images/btn.png"
 
 const IOSDeveloper = () => {
     const courses1 = [
-      { course: "Introduction to iOS Development and Swift", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Xcode Storyboards and Interface Builder", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 3'] },
-      { course: "Swift Programming Basics", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "User Interface Development", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Understanding Apple Documentation", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Intermediate Swift Programming", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "iOS App Design Patterns and Code Structuring", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Advanced Swift Programming", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Networking and JSON Parsing", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Auto Layout Efficiency", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Location Services", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Database Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Table Views and CocoaPod Dependencies", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Command Line and Terminal", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "SwiftUI and Declarative Programming", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Version Control", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Local Data Persistence", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Grand Central Dispatch", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Testing", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Memory Management", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Dependency Manager", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "In-App Purchases and Apple StoreKit", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Core ML and Machine Learning", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "CreateML and Natural Language Processing", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "ARKit and Augmented Reality Apps", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "App Store Submission Process", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to iOS Development and Swift", content: ['Overview of iOS development ecosystem', 'Introduction to Swift programming language', 'Setting up Xcode IDE', 'Basics of Xcode playgrounds', 'Introduction to iOS app architecture'] }, 
+      { course: "Xcode Storyboards and Interface Builder", content: ['Understanding Xcode Storyboards', 'Working with Interface Builder', 'Designing user interfaces visually', 'Creating Segues and Navigation Controllers', 'Implementing Auto Layout constraints'] },
+      { course: "Swift Programming Basics", content: ['Swift syntax fundamentals', 'Constants and Variables', 'Data Types and Collections', 'Control Flow (if statements, loops, switch statements)', ''] },
+      { course: "User Interface Development", content: ['UI Development using UIKit', 'Programmatic UI vs. Storyboards vs. SwiftUI', 'Working with Table Views', 'Creating responsive and adaptive UIs', ''] },
+      { course: "Understanding Apple Documentation", content: ["Navigating Apple's official documentation", 'Utilizing documentation for Swift and iOS SDK', 'Learning best practices for using documentation effectively', '', ''] },
+      { course: "Intermediate Swift Programming", content: ['Advanced control flow (Guard statements, error handling)', 'Functions and Closures', 'Understanding Optionals', 'Error Handling in Swift', ''] },
+      { course: "iOS App Design Patterns and Code Structuring", content: ['Introduction to iOS design patterns (MVC, MVVM)', 'Organizing code in Xcode projects', 'Building scalable and maintainable iOS apps', '', ''] },
+      { course: "Advanced Swift Programming", content: ['Classes, Structures, and Enums', 'Inheritance and Polymorphism', 'Advanced Optionals and Error Handling', '', ''] },
+      { course: "Networking and JSON Parsing", content: ['Working with URLSession for networking', 'Incorporating third-party APIs', 'Parsing JSON data in Swift', '', ''] },
+      { course: "Auto Layout Efficiency", content: ['Advanced Auto Layout techniques', 'Improving performance and efficiency in Auto Layout', 'Debugging Auto Layout issues', '', ''] },
+      { course: "Location Services", content: ['Integrating Core Location framework', "Working with user's location and MapKit", 'Implementing location-based features in iOS apps', '', ''] },
+      { course: "Database Integration", content: ['Introduction to database concepts in iOS', 'Working with Firebase for real-time data storage', 'Implementing database operations in iOS apps', '', ''] },
+      { course: "Table Views and CocoaPod Dependencies", content: ['Advanced Table View techniques', 'Working with CocoaPods for dependency management', 'Integrating third-party libraries into iOS projects', '', ''] },
+      { course: "Command Line and Terminal", content: ['Basics of command-line tools', 'Understanding terminal commands for iOS development', 'Automating tasks using command-line scripts', '', ''] },
+      { course: "SwiftUI and Declarative Programming", content: ['Introduction to SwiftUI framework', 'Building UIs declaratively', 'Integrating SwiftUI with existing UIKit code', '', ''] },
+      { course: "Version Control", content: ['Using Git for version control', 'Working with GitHub repositories', 'Understanding branching, merging, and pull requests', '', ''] },
+      { course: "Local Data Persistence", content: ['Storing data using UserDefaults', 'Introduction to Core Data for data persistence', 'Using Realm for local data storage', '', ''] },
+      { course: "Grand Central Dispatch", content: ['Understanding concurrency in iOS', 'Working with DispatchQueue', 'Implementing multithreading in iOS apps', '', ''] },
+      { course: "Testing", content: ['Unit testing with XCTest framework', 'UI testing with XCUITest', 'Test-driven development (TDD) practices', '', ''] },
+      { course: "Memory Management", content: ['Understanding memory management in iOS', 'Dealing with memory leaks and retain cycles', 'Utilizing ARC (Automatic Reference Counting)', '', ''] },
+      { course: "Dependency Manager", content: ['Introduction to dependency management in iOS', 'Working with CocoaPods and Carthage', 'Managing project dependencies efficiently', '', ''] },
+      { course: "In-App Purchases and Apple StoreKit", content: ['Implementing in-app purchases in iOS apps', 'Integrating Apple StoreKit framework', 'Handling transactions and managing products', '', ''] },
+      { course: "Core ML and Machine Learning", content: ['Introduction to Core ML framework', 'Implementing machine learning models in iOS apps', 'Integrating Core ML with Vision framework', '', ''] },
+      { course: "CreateML and Natural Language Processing", content: ['Creating custom machine learning models with CreateML', 'Implementing natural language processing features', 'Analyzing and processing text data in iOS apps', '', ''] },
+      { course: "ARKit and Augmented Reality Apps", content: ['Introduction to ARKit framework', 'Building augmented reality experiences in iOS apps', 'Implementing AR features using SceneKit and RealityKit', '', ''] },
+      { course: "App Store Submission Process", content: ['Preparing an iOS app for submission to the App Store', 'Understanding App Store guidelines and requirements', 'Uploading and submitting an app to the App Store Connect platform', '', ''] },
     ];
 
     
@@ -49,13 +49,13 @@ const IOSDeveloper = () => {
             title: 'Deebug Institute Certified: Flutter Application Developer',
             category: 'app-development',
             icons: [flutter, dart, git],
-            link: "/Certification/FlutterApplicationDevelopment"
+            link: "/certification/flutter-application-development"
         },
         {
             title: 'Deebug Institute Certified: Android Developer',
             category: 'app-development',
             icons: [kotlin],
-            link: "/Certification/AndroidDevelopment"
+            link: "/certification/android-development"
         },
     ];
 
@@ -306,7 +306,7 @@ const IOSDeveloper = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

@@ -19,18 +19,18 @@ import btn from "../components/images/btn.png"
 
 const UXDesign = () => {
     const courses1 = [
-      { course: "Introduction to UX Design", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "User Research", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "User Experience Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Usability and Accessibility", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Interaction Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Visual Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Design Tools and Software", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Designing for Digital Health", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Designing for Business", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "UX Design Best Practices", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Portfolio Development and Career Growth", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Capstone Project", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to UX Design", content: ['Definition and importance of UX design', 'User-centered design principles', 'Design thinking process', 'UX design process'] }, 
+      { course: "User Research", content: ['User research methods (interviews, surveys, usability testing)', 'User personas and user journeys', 'User research analysis and synthesis'] },
+      { course: "User Experience Design", content: ['User experience mapping', 'Wireframing and prototyping', 'Interaction design', 'Visual design principles'] },
+      { course: "Usability and Accessibility", content: ['Usability testing and evaluation', 'Accessibility principles and guidelines', 'Inclusive design'] },
+      { course: "Interaction Design", content: ['Interaction design patterns', 'Micro-interactions', 'Designing for behavior change' ] },
+      { course: "Visual Design", content: ['Visual design principles', 'Color theory and typography', 'Designing for digital products' ] },
+      { course: "Design Tools and Software", content: ['Sketching and wireframing tools (Figma, Sketch, Adobe XD)', 'Prototyping tools (InVision, Figma, Adobe XD)', 'Design systems and style guides', 'Knowledge of iOS app design principles, including the Human Interface Guidelines.', 'Knowledge of Android app design principles, including the Material Guidelines.','Google workspace tools'] },
+      { course: "Designing for Digital Health", content: ['Healthcare industry overview', 'Designing for patient engagement', 'Designing for healthcare professionals'] },
+      { course: "Designing for Business", content: ['Designing for business goals', 'Designing for conversion and sales', 'Designing for user engagement'] },
+      { course: "UX Design Best Practices", content: ['Design principles and guidelines', 'Designing for ethics and privacy', 'Designing for scalability and growth'] },
+      { course: "Portfolio Development and Career Growth", content: ['Building a UX design portfolio', 'Resume and cover letter writing', 'Interview preparation and career growth'] },
+      { course: "Capstone Project", content: ['Applying UX design principles to a real-world project', 'Developing a case study and presenting to stakeholders', 'Deebug Product Design (UX/UI) Professional Certificate (Deebug)'] },
     ];
 
     
@@ -39,13 +39,13 @@ const UXDesign = () => {
             title: 'Deebug Institute Certified: UI Design',
             category: 'design',
             icons: [adobe, adobexd, sketch, figma],
-            link: "/Certification/UIDesign"
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: Frontend (ReactJS) Software Developer',
             category: 'software-development',
             icons: [react, vue, git, angular],
-            link: "/Certification/Frontend(ReactJS)SoftwareDevelopment"
+            link: "/certification/frontend-reactjs-software-development"
         },
     ];
 
@@ -328,7 +328,7 @@ const UXDesign = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>

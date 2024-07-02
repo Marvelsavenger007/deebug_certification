@@ -15,23 +15,23 @@ import btn from "../components/images/btn.png"
 
 const AndroidDev = () => {
     const courses1 = [
-      { course: "Introduction to Android Development", content: ['Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1', 'Content for Course 1'] }, 
-      { course: "Android Components", content: ['Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2', 'Content for Course 2'] },
-      { course: "User Interface Design", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Fragments", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Support User Interface Components", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Data Storage", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Multithreading and Asynchronous Programming", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Debugging and Error Handling", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Context and 3rd Party Libraries", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Networking", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Data Format and HTTP", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Android Jetpack", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "UI Components and Enhancements", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Compose", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Design Patterns and Architecture", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Unit Testing and Firebase Integration", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
-      { course: "Security and App Release", content: ['Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3', 'Content for Course 3'] },
+      { course: "Introduction to Android Development", content: ['Programming basics', 'Introduction to Java', 'Understanding the fundamentals of Kotlin (variables, data types, loops, conditionals, etc.).', 'Overview of Android Studio IDE', 'Project structure in Android Studio', 'xml and .gradle files' ] }, 
+      { course: "Android Components", content: ['Activity and its lifecycle', 'Tasks and Back Stack', 'Service', 'Broadcast Receiver', 'Content Provider', 'Intents (Types: Implicit, Explicit)', 'Intent Filter'] },
+      { course: "User Interface Design", content: ['Static UI components (Views and ViewGroups)', 'Dynamic UI components (RecyclerView, ViewPager, Spinner)', 'CustomViews (Canvas, Bitmap, Paint)', 'UI Resources (Drawables, Strings, Styles)', ''] },
+      { course: "Fragments", content: ['Fragment basics and lifecycle', 'Fragment Manager'] },
+      { course: "Support User Interface Components", content: ['ProgressBar', 'Dialogs', 'Toast & Snackbar', '', ''] },
+      { course: "Data Storage", content: ['SharedPreferences', 'Learn about SQLite databases for local data storage.', 'File Systems', 'Database (RoomDB)', ''] },
+      { course: "Multithreading and Asynchronous Programming", content: ['Understand multithreading concepts like threads, handlers, and asynchronous tasks.', 'Utilize background tasks to perform heavy operations without blocking the UI.', 'Implement libraries like RxJava and coroutines for efficient asynchronous programming.', 'Understand threading safety and avoid common concurrency issues.', 'WorkManager'] },    
+      { course: "Debugging and Error Handling", content: ['Memory profiling', 'Logging', 'Exceptions and Error Handling', 'Memory Leak Detection and Fixing', ''] },
+      { course: "Context and 3rd Party Libraries", content: ['Understanding Context', 'Image Loading Libraries (Glide, Picasso)', 'Dependency Injection (Dagger)', '', ''] },
+      { course: "Networking", content: ['Fast Android Networking Library', 'Retrofit', 'MultiThreading (RxJava, Coroutines, Kotlin Flow API)', '', ''] },
+      { course: "Data Format and HTTP", content: ['JSON Parsing (GSON, Moshi)', 'Flat Buffer and Protocol Buffer', 'OkHttp and Interceptors', 'Caching and Timeout Handling', 'OAuth 2.0'] },
+      { course: "Android Jetpack", content: ['Foundation Components (AppCompat, Android KTX, Multidex)', 'Architecture Components (LiveData, ViewModel, DataBinding, Paging, Work Manager, Navigation)', 'Behaviour Components (Download Manager, Media Playback, Notification, Permissions, Preference, Sharing, Slice)', '', ''] },
+      { course: "UI Components and Enhancements", content: ['Animation & Transition', 'Android Auto, Android Wear', 'Palette, Emoji', 'Android TV, Android Wear', ''] },
+      { course: "Compose", content: ['Introduction to Jetpack Compose', 'State management in Compose', 'Layouts and Lists', 'Gestures and Animation', 'Compose UI Component Library'] },
+      { course: "Design Patterns and Architecture", content: ['Builder, Singleton, Factory, Observer', 'Dependency Injection', 'Repository Pattern', 'MVVM, MVP, MVI, Clean Architecture', ''] },
+      { course: "Unit Testing and Firebase Integration", content: ['Local and Instrumentation Testing', 'Understand unit testing and UI testing.', 'Learn to use JUnit and Espresso for testing Android applications.', 'Firebase Integration (FCM, Crashlytics, Analytics, Remote Config, App Indexing, Dynamic Link)', ''] },
+      { course: "Security and App Release", content: ['Data Encryption', 'Proguard and R8', 'App Release process, .keystore file, App Bundle, Playstore Deployment', '', ''] },
     ];
 
     
@@ -40,13 +40,13 @@ const AndroidDev = () => {
             title: 'Deebug Institute Certified: Flutter Application Developer',
             category: 'app-development',
             icons: [flutter, dart, git],
-            link: "/Certification/FlutterApplicationDevelopment"
+            link: "/certification/flutter-application-development"
         },
         {
             title: 'Deebug Institute Certified: iOS Developer',
             category: 'app-development',
             icons: [xcode],
-            link: "/Certification/iOSDevelopment"
+            link: "/certification/ios-devlopment"
         },
     ];
 
@@ -303,7 +303,7 @@ const AndroidDev = () => {
                 free/discounted renewal options for your [Certificate Name] certificate.
                 Re-enroll now and ensure your credentials stay current without breaking the bank!
             </p>
-            <a href='/CertificationRenewal'>Learn more about renewing</a>
+            <a href='/certification-renewal'>Learn more about renewing</a>
         </div>
         <div className='course-related'>
             <h1>Related certifications</h1>
