@@ -6,13 +6,10 @@ import backend from "../components/images/frontendsnapshot.webp";
 import history from "../components/images/history.png";
 import check from "../components/images/check.png";
 import certificate from "../components/images/certificate.webp";
-import node from "../components/images/nodejs.png";
-import react from "../components/images/react.png";
-import mongo from "../components/images/mongodb.png";
-import express from "../components/images/express.png";
-import git from "../components/images/github.png";
-import swift from "../components/images/swift.png";
-import xcode from "../components/images/xcode.png";
+import adobe from "../components/images/adobe.png";
+import adobexd from "../components/images/adobe-xd.png";
+import sketch from "../components/images/sketch.png";
+import figma from "../components/images/figma.png";
 import kotlin from "../components/images/kotlin.png";
 import btn from "../components/images/btn.png"
 
@@ -37,19 +34,16 @@ const Fullstack = () => {
     
     const courses = [
         {
-            title: 'Deebug Institute Certified: Full Stack (MERN) Software Development',
-            category: 'software-development',
-            icons: [express, react, node, git, mongo]
-        },
-        {
-            title: 'Deebug Institute Certified: Complete Mobile Application Developer',
-            category: 'app-development',
-            icons: [react, swift, xcode, kotlin]
+            title: 'Deebug Institute Certified: UI Design',
+            category: 'design',
+            icons: [adobe, adobexd, sketch, figma],
+            link: "/certification/ui-design"
         },
         {
             title: 'Deebug Institute Certified: Android Developer',
             category: 'app-development',
-            icons: [kotlin]
+            icons: [kotlin],
+            link: "/certification/android-development"
         },
     ];
 

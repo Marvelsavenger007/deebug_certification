@@ -53,7 +53,12 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
         <div className='navbar-container'>
             <div className='navbar-title'>
                 <a href='/'>
-                    <img src={logo} width="23px" height="23px" alt='icon' />
+                    <img 
+                        src={logo} 
+                        width="23px" 
+                        height="23px" 
+                        alt='icon'                             
+                    />
                 </a>
                 <a href='/'><h1>DEEBUG</h1></a>
             </div>
@@ -105,7 +110,7 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
                             <div className='profile-content'>
                                 <p><a href='/profile'>Profile</a></p>
                                 <p><a href='/my-certificates'>My certifications</a></p>
-                                <p><a href='/'>Saved courses</a></p>
+                                <p><a href='/saved-courses'>Saved courses</a></p>
                                 <hr />
                                 <p onClick={handleLogout} style={{ cursor: 'pointer' }}>Sign out</p>
                             </div>

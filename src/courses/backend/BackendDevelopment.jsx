@@ -81,7 +81,7 @@ const BackendDevelopment = () => {
             <div className='course-bground-img'>
                 <img
                     src={backend}
-                    width="70%"
+                    width="90%"
                     height='100%'
                     alt='icon'
                 />
