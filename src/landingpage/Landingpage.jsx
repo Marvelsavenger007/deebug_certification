@@ -119,22 +119,22 @@ const Landingpage = () => {
         <label className="filter-label">Filter</label>
         <div className="filter-dropdown">
             <img
-            src={filter}
-            alt="Filter"
-            className="filter-icon"
-            onClick={toggleDropdown}
+                src={filter}
+                alt="Filter"
+                className="filter-icon"
+                onClick={toggleDropdown}
             />
             <select
-            id="course-filter"
-            onChange={handleFilterChange}
-            value={selectedFilter}
-            className={`filter-select ${isDropdownVisible ? 'visible' : ''}`}
+                id="course-filter"
+                onChange={handleFilterChange}
+                value={selectedFilter}
+                className={`filter-select ${isDropdownVisible ? 'visible' : ''}`}
             >
-            <option value="all">All Courses</option>
-            <option value="app-development">App Development</option>
-            <option value="design">Design</option>
-            <option value="research">Research</option>
-            <option value="software-development">Software Development</option>
+                <option value="all">All Courses</option>
+                <option value="app-development">App Development</option>
+                <option value="design">Design</option>
+                <option value="research">Research</option>
+                <option value="software-development">Software Development</option>
             </select>
         </div>
         </div>

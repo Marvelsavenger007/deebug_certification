@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./certification.css";
-import ribbon from "../images/ribbon.webp";
+// import ribbon from "../images/ribbon.webp";
 import green from "../images/greeninfo.png";
 
 
 const MyCertificates = () => {
-    const [hasCertificates] = useState(false);
+    // const [hasCertificates] = useState(false);
     
     return (
         <div className='my-certificate-main'>
@@ -13,7 +13,7 @@ const MyCertificates = () => {
                 <h1>My Certifications</h1>
             </div>
             <div className='my-certificate-sub'>
-            {!hasCertificates ? (
+            {/* {!hasCertificates ? (
                 <div className='empty-certificate'>
                     <img
                         src={ribbon}
@@ -24,7 +24,7 @@ const MyCertificates = () => {
                     <p>Start learning a new skill</p>
                     <a href="/">Browse courses</a>
                 </div>
-            ) : (
+            ) : ( */}
                 <div className='filled-certificates'>
                     <div className='certification-id'>
                         <p>Certification</p>
@@ -41,7 +41,7 @@ const MyCertificates = () => {
                         <button>View Certificate</button>
                     </div>
                 </div>
-            )}
+            {/* )} */}
             </div>
         </div>
     )

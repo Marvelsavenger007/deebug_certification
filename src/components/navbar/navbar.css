@@ -20,14 +20,20 @@
 .navbar-title{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.navbar-title > h1{
+.navbar-title > a{
+    text-decoration: none;
+}
+
+.navbar-title > a > h1{
     margin-left: 0.5rem;
     font-size: 1.1rem;
     font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1);
+    text-decoration: none;
 }
 
 

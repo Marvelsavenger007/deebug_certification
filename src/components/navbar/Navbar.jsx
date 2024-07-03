@@ -55,7 +55,7 @@ const Navbar = ({ isSignedIn, setIsSignedIn }) => {
                 <a href='/'>
                     <img src={logo} width="23px" height="23px" alt='icon' />
                 </a>
-                <h1>DEEBUG</h1>
+                <a href='/'><h1>DEEBUG</h1></a>
             </div>
             {!hideElements && (
                 <>

@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import add from "../images/add.png"
+import React from 'react';
+// import add from "../images/add.png"
 import node from "../images/nodejs.png";
 import react from "../images/react.png";
 import mongo from "../images/mongodb.png";
@@ -9,7 +9,7 @@ import bin from "../images/trash.png";
 import btn from "../images/btn.png";
 
 const SavedCourses = () => {
-    const [hasCourses] = useState(false);
+    // const [hasCourses] = useState(false);
 
     const courses = [        
         {
@@ -24,11 +24,11 @@ const SavedCourses = () => {
     <div className='my-certificate-main'>
         <div className='my-certificate-top'>
             <h1>Saved Courses</h1>
-            <p>Added 12/05/2024 by purpose olikiabo-osagie</p>
+            <p>Added 12/05/2024 by Purpose Plikiabo-Osagie</p>
         </div>
         <div className='my-certificate-sub'>
-            <h1> 0 courses saved</h1>
-            {!hasCourses ? (
+            <h1> 1 course saved</h1>
+            {/* {!hasCourses ? (
                 <button className='saved-courses-btn'>
                     <img
                         src={add}
@@ -38,7 +38,7 @@ const SavedCourses = () => {
                     />
                     <a href="/">Add course</a>
                 </button>
-            ) : (
+            ) : ( */}
                 <div className='courses-container'>
                     {courses.map((course, index) => (
                         <div className='saved-courses-ctn' key={index}>
@@ -80,7 +80,7 @@ const SavedCourses = () => {
                         </div>
                     ))}
                 </div>
-            )}
+            {/* )} */}
         </div>
     </div>
   )

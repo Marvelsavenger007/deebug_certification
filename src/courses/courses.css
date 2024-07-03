@@ -26,15 +26,14 @@
 }
 
 .course-bground-text > p{
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: left;
     color: rgba(18, 18, 18, 1);    
 }
 
 .course-bground-text > h1{
-    font-size: 54px;
+    font-size: 2.6rem;
     font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1);    
@@ -52,7 +51,7 @@
 }
 
 .course-bground-text > h2{
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: left;
     color: rgba(18, 18, 18, 1);
@@ -66,7 +65,7 @@
 }
 
 .course-details > h1{
-    font-size: 32px;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 41.6px;
     text-align: left;
@@ -98,7 +97,7 @@
 }
 
 .course-duration-content > h1{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-align: left;
     color: rgba(18, 18, 18, 1); 
@@ -110,7 +109,7 @@
 }
 
 .course-duration-props-child > p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: left;
     color: rgba(18, 18, 18, 1);
@@ -119,7 +118,7 @@
 }
 
 .course-duration-props-child > li{
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 400;
     color: rgba(18, 18, 18, 1);
     width: 90%;
@@ -132,7 +131,7 @@
 }
 
 .course-overview > h1{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 300;
     text-align: left;    
     background: linear-gradient(92.17deg, #800080 -30.63%, #1A4BCC 100%);
@@ -141,7 +140,7 @@
 }
 
 .course-overview > p{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: rgba(18, 18, 18, 1);    
     line-height: 160%;
@@ -152,7 +151,7 @@
 }
 
 .course-content > h1{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 300;
     text-align: left;    
     background: linear-gradient(92.17deg, #800080 -30.63%, #1A4BCC 100%);
@@ -162,7 +161,7 @@
 }
 
 .course-content > h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-align: left;    
     color: rgba(0, 103, 184, 1);
@@ -172,8 +171,29 @@
     font-size: 1rem;
     font-weight: 400;
     color: rgba(102, 102, 102, 1);
-
 }
+
+.course-content > button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    width: fit-content;
+    color: rgba(0, 103, 184, 1);
+}
+
+.course-content > button > img{
+    object-fit: contain;
+    margin-left: 0.5rem;
+}
+
+
+
 
 .course-week {
     margin-bottom: 0.3rem;
@@ -223,7 +243,7 @@
     font-weight: 400;
     text-align: left;;
     margin-bottom: 0.5rem;
-    list-style-type: none; /* Remove list style */
+    list-style-type: none;
 }
 
 .course-skill {
@@ -238,7 +258,7 @@
 }
 
 .course-skill > h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     text-align: left;    
     background: linear-gradient(92.17deg, #800080 -30.63%, #1A4BCC 100%);
@@ -248,13 +268,13 @@
 }
 
 .course-skill > p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: rgba(18, 18, 18, 1);
 }
 
 .course-skill-content > p{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: left;
     margin-left: 0.8rem;
@@ -266,7 +286,7 @@
 }
 
 .course-exam > h1{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 300;
     text-align: left;    
     background: linear-gradient(92.17deg, #800080 -30.63%, #1A4BCC 100%);
@@ -291,7 +311,7 @@
 }
 
 .course-exam-text > h1{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 300;
     line-height: 32.5px;
     text-align: left;
@@ -299,7 +319,7 @@
 }
 
 .course-exam-text > p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: left;
     color: rgba(18, 18, 18, 1);
